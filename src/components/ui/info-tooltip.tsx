@@ -24,7 +24,7 @@ export function InfoTooltip({
         <button
           type="button"
           className={cn(
-            "inline-flex items-center justify-center rounded-full p-0.5 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-1",
+            "inline-flex items-center justify-center rounded-full p-0.5 ml-1 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-1",
             className
           )}
           aria-label="More information"
