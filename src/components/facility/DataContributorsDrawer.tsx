@@ -103,34 +103,35 @@ export function DataContributorsDrawer({
         </p>
       </div>
 
-      {/* Explanation box */}
-      <div className="mb-4 p-3 rounded-lg bg-blue-50 border border-blue-200">
-        <div className="flex gap-2">
-          <Info className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-          <div className="text-sm text-blue-900">
-            <p>
-              Multiple organizations may contribute data about the same production location.
-              Each contributor uploads data via a named list — use list names to understand
-              the context and source of the data.
-            </p>
-            <a
-              href="https://info.opensupplyhub.org/resources/an-open-data-model"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 mt-1.5 font-medium text-blue-700 hover:underline"
-            >
-              Learn more about our open data model →
-            </a>
-          </div>
-        </div>
-      </div>
-
       <div className="space-y-4">
         {/* Other contributions */}
         <div>
           <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
             Contributions ({contributors.length})
           </h4>
+
+          {/* Explanation box */}
+          <div className="mb-4 p-3 rounded-lg bg-blue-50 border border-blue-200">
+            <div className="flex gap-2">
+              <Info className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+              <div className="text-sm text-blue-900">
+                <p>
+                  Multiple organizations may contribute data about the same production location.
+                  Each contributor uploads data via a named list — use list names to understand
+                  the context and source of the data.
+                </p>
+                <a
+                  href="https://info.opensupplyhub.org/resources/an-open-data-model"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 mt-1.5 font-medium text-blue-700 hover:underline"
+                >
+                  Learn more about our open data model →
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="space-y-2">
             {contributors.map((c, i) => {
               const listTitle = c.listTitle || getListTitle(c.name);
