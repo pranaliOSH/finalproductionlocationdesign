@@ -1,0 +1,369 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Open Supply Hub Design System - Clean & Minimal */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+@layer base {
+  :root {
+    /* Clean neutral palette */
+    --background: 0 0% 100%;
+    --foreground: 220 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 15%;
+
+    /* Primary - Purple for links */
+    --primary: 270 50% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Light gray */
+    --secondary: 220 10% 96%;
+    --secondary-foreground: 220 15% 25%;
+
+    --muted: 220 10% 96%;
+    --muted-foreground: 220 8% 50%;
+
+    /* Accent - Subtle warm */
+    --accent: 220 10% 94%;
+    --accent-foreground: 220 15% 20%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 10% 90%;
+    --input: 220 10% 90%;
+    --ring: 270 50% 50%;
+
+    --radius: 0.5rem;
+
+    /* Status colors */
+    --verified: 152 50% 38%;
+    --verified-foreground: 0 0% 100%;
+    --claimed: 152 50% 38%;
+    --claimed-bg: 152 40% 96%;
+    
+    /* Category colors - Muted */
+    --category-identity: 220 50% 55%;
+    --category-operations: 270 40% 55%;
+    --category-compliance: 35 60% 50%;
+    --category-environment: 152 45% 42%;
+    --category-workforce: 340 50% 55%;
+    
+    /* Source colors */
+    --source-claimed: 152 50% 38%;
+    --source-partner: 173 45% 35%;
+    --source-contributed: 25 70% 50%;
+    --source-oshub: 217 70% 55%;
+    
+    /* Confidence */
+    --confidence-high: 152 50% 45%;
+    --confidence-medium: 35 60% 50%;
+    --confidence-low: 220 10% 70%;
+
+    /* Typography */
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-mono: ui-monospace, monospace;
+
+    /* Shadows - Subtle */
+    --shadow-sm: 0 1px 2px 0 hsl(220 15% 15% / 0.04);
+    --shadow-card: 0 1px 3px 0 hsl(220 15% 15% / 0.06);
+    --shadow-card-hover: 0 4px 12px -2px hsl(220 15% 15% / 0.08);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 15% 25%;
+    --sidebar-primary: 220 15% 15%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 10% 96%;
+    --sidebar-accent-foreground: 220 15% 15%;
+    --sidebar-border: 220 10% 90%;
+    --sidebar-ring: 270 50% 50%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 270 55% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 8% 55%;
+
+    --accent: 220 15% 18%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 270 55% 60%;
+
+    --claimed-bg: 152 30% 12%;
+    
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 270 55% 60%;
+    --sidebar-primary-foreground: 220 20% 8%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 270 55% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  /* Data card - Clean and simple */
+  .data-card {
+    @apply bg-card rounded-lg border border-border p-5;
+  }
+
+  /* Confidence dots */
+  .confidence-indicator {
+    @apply flex items-center gap-1;
+  }
+
+  .confidence-dot {
+    @apply w-1.5 h-1.5 rounded-full;
+  }
+
+  .confidence-dot.active {
+    @apply bg-confidence-high;
+  }
+
+  .confidence-dot.inactive {
+    @apply bg-confidence-low;
+  }
+
+  /* Category badges - Minimal */
+  .category-badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded text-base font-medium;
+  }
+
+  .category-badge.identity {
+    @apply bg-category-identity/10 text-category-identity;
+  }
+
+  .category-badge.operations {
+    @apply bg-category-operations/10 text-category-operations;
+  }
+
+  .category-badge.compliance {
+    @apply bg-category-compliance/10 text-category-compliance;
+  }
+
+  .category-badge.environment {
+    @apply bg-category-environment/10 text-category-environment;
+  }
+
+  .category-badge.workforce {
+    @apply bg-category-workforce/10 text-category-workforce;
+  }
+
+  /* Data field */
+  .data-field {
+    @apply space-y-1;
+  }
+
+  .data-field-label {
+    @apply text-base text-muted-foreground flex items-center gap-1;
+  }
+
+  .data-field-value {
+    @apply text-lg text-foreground;
+  }
+
+  .data-field-provenance {
+    @apply text-base text-muted-foreground flex items-center gap-1;
+  }
+
+  /* Section headers - Simplified */
+  .section-header {
+    @apply flex items-center justify-between pb-3 mb-4 border-b border-border;
+  }
+
+  .section-title {
+    @apply text-lg font-medium text-foreground flex items-center gap-2;
+  }
+
+  /* Contributor chips */
+  .contributor-chip {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded bg-secondary text-secondary-foreground text-base;
+  }
+
+  /* Info trigger - Minimal */
+  .info-trigger {
+    @apply inline-flex items-center justify-center w-5 h-5 rounded-full text-muted-foreground hover:text-primary transition-colors cursor-help text-sm;
+  }
+
+  /* OS ID */
+  .os-id {
+    @apply font-mono text-lg bg-secondary px-2 py-0.5 rounded inline-flex items-center gap-2;
+  }
+
+  /* Map container */
+  .map-container {
+    @apply rounded-lg overflow-hidden border border-border;
+  }
+
+  /* Stats */
+  .stats-grid {
+    @apply grid grid-cols-2 sm:grid-cols-4 gap-3;
+  }
+
+  .stat-item {
+    @apply bg-secondary/50 rounded-lg p-3 text-center;
+  }
+
+  .stat-value {
+    @apply text-2xl font-semibold text-foreground;
+  }
+
+  .stat-label {
+    @apply text-base text-muted-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-claimed-bg {
+    background-color: hsl(var(--claimed-bg));
+  }
+
+  .text-verified {
+    color: hsl(var(--verified));
+  }
+
+  .bg-verified {
+    background-color: hsl(var(--verified));
+  }
+
+  .text-category-identity {
+    color: hsl(var(--category-identity));
+  }
+
+  .bg-category-identity\/10 {
+    background-color: hsl(var(--category-identity) / 0.1);
+  }
+
+  .text-category-operations {
+    color: hsl(var(--category-operations));
+  }
+
+  .bg-category-operations\/10 {
+    background-color: hsl(var(--category-operations) / 0.1);
+  }
+
+  .text-category-compliance {
+    color: hsl(var(--category-compliance));
+  }
+
+  .bg-category-compliance\/10 {
+    background-color: hsl(var(--category-compliance) / 0.1);
+  }
+
+  .text-category-environment {
+    color: hsl(var(--category-environment));
+  }
+
+  .bg-category-environment\/10 {
+    background-color: hsl(var(--category-environment) / 0.1);
+  }
+
+  .text-category-workforce {
+    color: hsl(var(--category-workforce));
+  }
+
+  .bg-category-workforce\/10 {
+    background-color: hsl(var(--category-workforce) / 0.1);
+  }
+
+  .bg-confidence-high {
+    background-color: hsl(var(--confidence-high));
+  }
+
+  .bg-confidence-medium {
+    background-color: hsl(var(--confidence-medium));
+  }
+
+  .bg-confidence-low {
+    background-color: hsl(var(--confidence-low));
+  }
+
+  .text-source-claimed {
+    color: hsl(var(--source-claimed));
+  }
+
+  .bg-source-claimed {
+    background-color: hsl(var(--source-claimed));
+  }
+
+  .text-source-partner {
+    color: hsl(var(--source-partner));
+  }
+
+  .bg-source-partner {
+    background-color: hsl(var(--source-partner));
+  }
+
+  .text-source-contributed {
+    color: hsl(var(--source-contributed));
+  }
+
+  .bg-source-contributed {
+    background-color: hsl(var(--source-contributed));
+  }
+
+  .text-source-oshub {
+    color: hsl(var(--source-oshub));
+  }
+
+  .bg-source-oshub {
+    background-color: hsl(var(--source-oshub));
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+}
