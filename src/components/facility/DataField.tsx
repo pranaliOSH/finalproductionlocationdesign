@@ -4,7 +4,7 @@ import { Sheet, SheetTrigger } from "@/components/ui/sheet";
 import { DataContributorsDrawer } from "@/components/facility/DataContributorsDrawer";
 
 // Generate contributors dynamically based on count
-const contributorTypes = ["Brand", "Auditor", "CSO", "Supplier", "MSI", "Union", "Other"];
+const contributorTypes = ["Brand", "Auditor", "Civil Society Organization", "Supplier", "Multi-Stakeholder Initiative", "Union", "Other"];
 const contributorNames = [
   "Marks & Spencer", "Sainsbury's", "JD Williams", "SLCP", "International Accord Foundation",
   "OS Hub Research Team", "Worldly", "amfori", "H&M Group", "Inditex", "Target Corporation",

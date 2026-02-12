@@ -31,9 +31,9 @@ const typeLabels: Record<ContributorType, string> = {
   academic: "Academic",
   auditor: "Auditor",
   brand: "Brand",
-  cso: "CSO",
+  cso: "Civil Society Organization",
   supplier: "Supplier",
-  msi: "MSI",
+  msi: "Multi-Stakeholder Initiative",
   union: "Union",
   other: "Other",
 };
