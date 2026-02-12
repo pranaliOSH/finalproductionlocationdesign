@@ -68,7 +68,7 @@ export function FacilityMap({
               Location Address
               <InfoTooltip description="Physical address and geographic coordinates for this production location." />
             </h3>
-            <p className="text-sm text-muted-foreground">Physical address and coordinates</p>
+            
           </div>
         </div>
       </div>
