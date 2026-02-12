@@ -452,24 +452,6 @@ export default function FacilityPage() {
                   tableRow={true}
                 />
                 <DataField 
-                  label="Production Location Description"
-                  value={facilityData.productionLocationDescription}
-                  explanation="A description of this production location's capabilities and focus."
-                  contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
-                  confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
-                  label="Company Phone"
-                  value={facilityData.companyPhone}
-                  explanation="The primary contact phone number for this facility."
-                  contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
-                  confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
                   label="Company Website"
                   value={
                     <a href={facilityData.companyWebsite} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
@@ -483,79 +465,12 @@ export default function FacilityPage() {
                   tableRow={true}
                 />
                 <DataField 
-                  label="Certifications / Standards / Regulations"
-                  value={facilityData.description}
-                  explanation="Certifications and standards the facility adheres to."
-                  contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Jan 2025"
-                  
-                  confidenceLevel="low"
-                  tableRow={true}
-                />
-                <DataField 
-                  label="Membership"
-                  value={
-                    <div className="flex flex-col gap-1">
-                      {facilityData.affiliations.map(affiliation => (
-                        <span key={affiliation}>
-                          {affiliation}
-                        </span>
-                      ))}
-                    </div>
-                  }
-                  explanation="Industry associations and organizations this production location is a member of."
+                  label="Company Phone"
+                  value={facilityData.companyPhone}
+                  explanation="The primary contact phone number for this facility."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="Nov 2022"
-                  
                   confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
-                  label="Estimated Annual Throughput"
-                  value={facilityData.estimatedAnnualThroughput}
-                  explanation="The estimated annual production output of this production location."
-                  contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
-                  
-                  confidenceLevel="medium"
-                  tableRow={true}
-                />
-                <DataField 
-                  label="Actual Annual Energy Consumption"
-                  value={facilityData.actualAnnualEnergyConsumption}
-                  explanation="The actual annual energy consumption of this production location."
-                  contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
-                  
-                  confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
-                  label="Percentage of Female Workers"
-                  value={`${facilityData.percentageFemaleWorkers}%`}
-                  explanation="The percentage of the workforce that identifies as female."
-                  contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
-                  
-                  confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
-                  label="Minimum Order Quantity"
-                  value={facilityData.minimumOrderQuantity}
-                  explanation="The minimum order size this production location accepts for production."
-                  contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
-                  confidenceLevel="medium"
-                  tableRow={true}
-                />
-                <DataField 
-                  label="Average Lead Time"
-                  value={facilityData.averageLeadTime}
-                  explanation="The typical time from order placement to delivery."
-                  contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
-                  confidenceLevel="medium"
                   tableRow={true}
                 />
                 <DataField 
@@ -580,6 +495,86 @@ export default function FacilityPage() {
                   label="Office Country"
                   value={facilityData.officeCountry}
                   explanation="The country where the parent company's office is located."
+                  contributor="Zaber and Zubair Fabrics Ltd"
+                  contributedAt="Nov 2022"
+                  confidenceLevel="high"
+                  tableRow={true}
+                />
+                <DataField 
+                  label="Production Location Description"
+                  value={facilityData.productionLocationDescription}
+                  explanation="A description of this production location's capabilities and focus."
+                  contributor="Zaber and Zubair Fabrics Ltd"
+                  contributedAt="Nov 2022"
+                  confidenceLevel="high"
+                  tableRow={true}
+                />
+                <DataField 
+                  label="Certifications / Standards / Regulations"
+                  value={facilityData.description}
+                  explanation="Certifications and standards the facility adheres to."
+                  contributor="Zaber and Zubair Fabrics Ltd"
+                  contributedAt="Jan 2025"
+                  confidenceLevel="low"
+                  tableRow={true}
+                />
+                <DataField 
+                  label="Membership"
+                  value={
+                    <div className="flex flex-col gap-1">
+                      {facilityData.affiliations.map(affiliation => (
+                        <span key={affiliation}>
+                          {affiliation}
+                        </span>
+                      ))}
+                    </div>
+                  }
+                  explanation="Industry associations and organizations this production location is a member of."
+                  contributor="Zaber and Zubair Fabrics Ltd"
+                  contributedAt="Nov 2022"
+                  confidenceLevel="high"
+                  tableRow={true}
+                />
+                <DataField 
+                  label="Minimum Order Quantity"
+                  value={facilityData.minimumOrderQuantity}
+                  explanation="The minimum order size this production location accepts for production."
+                  contributor="Zaber and Zubair Fabrics Ltd"
+                  contributedAt="Nov 2022"
+                  confidenceLevel="medium"
+                  tableRow={true}
+                />
+                <DataField 
+                  label="Average Lead Time"
+                  value={facilityData.averageLeadTime}
+                  explanation="The typical time from order placement to delivery."
+                  contributor="Zaber and Zubair Fabrics Ltd"
+                  contributedAt="Nov 2022"
+                  confidenceLevel="medium"
+                  tableRow={true}
+                />
+                <DataField 
+                  label="Percentage of Female Workers"
+                  value={`${facilityData.percentageFemaleWorkers}%`}
+                  explanation="The percentage of the workforce that identifies as female."
+                  contributor="Zaber and Zubair Fabrics Ltd"
+                  contributedAt="Nov 2022"
+                  confidenceLevel="high"
+                  tableRow={true}
+                />
+                <DataField 
+                  label="Estimated Annual Throughput"
+                  value={facilityData.estimatedAnnualThroughput}
+                  explanation="The estimated annual production output of this production location."
+                  contributor="Zaber and Zubair Fabrics Ltd"
+                  contributedAt="Nov 2022"
+                  confidenceLevel="medium"
+                  tableRow={true}
+                />
+                <DataField 
+                  label="Actual Annual Energy Consumption"
+                  value={facilityData.actualAnnualEnergyConsumption}
+                  explanation="The actual annual energy consumption of this production location."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="Nov 2022"
                   confidenceLevel="high"
