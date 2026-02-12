@@ -346,7 +346,7 @@ export default function FacilityPage() {
                 category="identity"
                 icon={<Building2 className="w-5 h-5" />}
                 explanation="Core identifying information about this production location."
-                subtitle="Core identifying information"
+                
                 singleColumn={true}
               >
                   <DataField 

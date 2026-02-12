@@ -282,7 +282,7 @@ interface Assessment {
            >
              <div className="flex items-center justify-between w-full">
                <div className="flex items-center gap-3">
-                  <ShieldAlert className="w-5 h-5 text-red-600" />
+                  <ShieldAlert className="w-5 h-5 text-yellow-600" />
                   <span className="font-bold text-lg">
                     Grievance Mechanism Placeholder Title
                     <InfoTooltip

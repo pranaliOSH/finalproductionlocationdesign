@@ -1,4 +1,4 @@
-import { Plus, Copy, Pencil, ShieldX, XCircle } from "lucide-react";
+import { Plus, Copy, ShieldX, XCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface ActionsCardProps {
@@ -17,10 +17,6 @@ export function ActionsCard({ isClaimed }: ActionsCardProps) {
         <Button size="sm" variant="ghost" className="gap-2 h-9 justify-start text-base">
           <Plus className="w-4 h-4" />
           Add Data
-        </Button>
-        <Button size="sm" variant="ghost" className="gap-2 h-9 justify-start text-base">
-          <Pencil className="w-4 h-4" />
-          Suggest Correction
         </Button>
         <Button size="sm" variant="ghost" className="gap-2 h-9 justify-start text-base">
           <Copy className="w-4 h-4" />
