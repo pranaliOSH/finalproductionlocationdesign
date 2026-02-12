@@ -68,6 +68,19 @@ export function DataContributorsDrawer({
         <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
           Promoted Contribution
         </h4>
+
+        {/* Why this data is displayed */}
+        <div className="mb-4 p-3 bg-primary/5 rounded-lg border border-primary/20">
+          <h4 className="text-xs font-medium text-primary mb-1.5">
+            Why is this data displayed over other contributions?
+          </h4>
+          <p className="text-xs text-muted-foreground leading-relaxed">
+            OS Hub prioritizes data from claimed production location owners and verified
+            sources. When multiple entries exist, we display the most recently verified data
+            from the highest-confidence source.
+          </p>
+        </div>
+
         <div className="bg-muted/50 rounded-lg p-4 border border-border">
           <div className="font-medium mb-3">{promotedValue || "Multiple values"}</div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -89,18 +102,6 @@ export function DataContributorsDrawer({
             )}
           </div>
         </div>
-      </div>
-
-      {/* Why this data is displayed */}
-      <div className="mb-4 p-3 bg-primary/5 rounded-lg border border-primary/20">
-        <h4 className="text-xs font-medium text-primary mb-1.5">
-          Why is this data displayed over other contributions?
-        </h4>
-        <p className="text-xs text-muted-foreground leading-relaxed">
-          OS Hub prioritizes data from claimed production location owners and verified
-          sources. When multiple entries exist, we display the most recently verified data
-          from the highest-confidence source.
-        </p>
       </div>
 
       <div className="space-y-4">
