@@ -232,10 +232,6 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
                           <span>Uploaded via list</span>
                         </div>
                         <p className="text-sm font-medium text-foreground">{listUpload.listTitle}</p>
-                        <div className="flex items-center gap-1.5 mt-0.5 text-xs text-muted-foreground">
-                          <Calendar className="w-3 h-3" />
-                          <span>{listUpload.dateContributed}</span>
-                        </div>
                       </div>
                     ))}
                   </div>
