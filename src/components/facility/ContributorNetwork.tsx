@@ -237,10 +237,6 @@ export function ContributorNetwork({ contributors, totalContributors, totalDataP
                           <p className="text-sm font-medium text-foreground">
                             {listUpload.listTitle}
                           </p>
-                          <div className="flex items-center gap-1.5 mt-1 text-xs text-muted-foreground">
-                            <Calendar className="w-3 h-3" />
-                            <span>{listUpload.dateContributed}</span>
-                          </div>
                         </div>
                       ))}
                     </div>
