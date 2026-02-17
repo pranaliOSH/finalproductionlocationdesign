@@ -159,16 +159,6 @@ export function DataContributorsDrawer({
                     </div>
                   </div>
 
-                  {/* List name */}
-                  {listTitle && (
-                    <div className="mx-3 mb-3 p-2.5 bg-muted/50 rounded-md border border-border/50">
-                      <div className="flex items-center gap-1.5 text-xs text-muted-foreground mb-0.5">
-                        <List className="w-3 h-3" />
-                        <span>Uploaded via list</span>
-                      </div>
-                      <p className="text-sm font-medium text-foreground">{listTitle}</p>
-                    </div>
-                  )}
                 </div>
               );
             })}
