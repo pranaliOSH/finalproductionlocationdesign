@@ -117,9 +117,9 @@ export function DataContributorsDrawer({
               <Info className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
               <div className="text-sm text-blue-900">
                 <p>
-                  Multiple organizations may contribute data about the same production location.
-                  Each contributor uploads data via a named list — use list names to understand
-                  the context and source of the data.
+                  Multiple organizations may have contributed information for this data point. You can see the list of historical data sources below. Click on the organization name to learn more about them and the data they have shared
+                
+
                 </p>
                 <a
                   href="https://info.opensupplyhub.org/resources/an-open-data-model"
