@@ -79,7 +79,7 @@ interface Assessment {
           <h2 className="text-2xl font-semibold text-foreground">
             Additional Information Provided by Third-parties
             <InfoTooltip
-              description="Data provided by third-party integration partners who enrich facility profiles with additional verified information."
+              description="Data provided by third-party partners who host additional social or environmental data related to this production location, its context, and/or its operations."
               learnMoreHref="https://info.opensupplyhub.org/data-integrations"
               learnMoreLabel="Learn more"
               className="ml-2"
