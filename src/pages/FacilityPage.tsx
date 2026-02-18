@@ -395,7 +395,7 @@ export default function FacilityPage() {
                   <DataField 
                     label="Location Type(s)"
                     value={facilityData.locationType.join(", ")}
-                    explanation="The type of location (e.g., manufacturing facility, warehouse, office)."
+                    explanation="The type of location. For example: Final Product Assembly, Raw Materials Production or Processing."
                     contributor="Zaber and Zubair Fabrics Ltd"
                     contributedAt="November 12, 2022"
                     moreEntries={3}
