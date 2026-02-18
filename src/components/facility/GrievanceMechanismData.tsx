@@ -19,8 +19,8 @@ export function GrievanceMechanismData({ embedded = false }: GrievanceMechanismD
                <span className="text-muted-foreground">Active</span>
              </p>
              <p className="font-medium">
-               <span>Attributes: </span>
-               <span className="text-muted-foreground">Coming soon</span>
+               <span>Type: </span>
+               <span className="text-muted-foreground">Coming Soon</span>
              </p>
              <p className="font-medium">
                <span>Active since: </span>
@@ -49,8 +49,8 @@ export function GrievanceMechanismData({ embedded = false }: GrievanceMechanismD
                <span className="text-muted-foreground">Active</span>
              </p>
              <p className="font-medium">
-               <span>Type: </span>
-               <span className="text-muted-foreground">Third Party Grievance Mechanism</span>
+               <span>Attributes: </span>
+               <span className="text-muted-foreground">Coming Soon</span>
              </p>
              <p className="font-medium">
                <span>Established Date: </span>
