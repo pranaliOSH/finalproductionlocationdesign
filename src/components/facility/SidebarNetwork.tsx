@@ -131,14 +131,11 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
               href={`/contributor/${encodeURIComponent(contributor.name)}`}
               className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-secondary/50 transition-colors group"
             >
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-foreground group-hover:text-primary truncate">
-                  {contributor.name}
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  Last contributed: {contributor.lastContributed}
-                </p>
-              </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-medium text-foreground group-hover:text-primary truncate">
+                    {contributor.name}
+                  </p>
+                </div>
             </a>
           ))}
         </div>
