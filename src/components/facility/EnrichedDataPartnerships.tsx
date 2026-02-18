@@ -86,8 +86,8 @@ export function EnrichedDataPartnerships({
 
           </h2>
         </div>
-        <p className="text-base text-muted-foreground">
-          Interested in sharing data like this? <a href="https://info.opensupplyhub.org/data-integrations" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Become an integration partner.</a> Need programmatic access? <a href="https://info.opensupplyhub.org/api" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Explore our API</a> to pull reports from these datasets.
+        <p className="text-base text-muted-foreground">Have information you'd like to share here? Want to pull a report of thi  Learn More. 
+          <a href="https://info.opensupplyhub.org/data-integrations" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Learn More.</a> Need programmatic access? <a href="https://info.opensupplyhub.org/api" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Explore our API</a> to pull reports from these datasets.
         </p>
       </div>
 
