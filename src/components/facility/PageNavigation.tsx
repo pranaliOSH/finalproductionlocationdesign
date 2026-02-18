@@ -11,7 +11,7 @@ const sections = [
   { id: "location", label: "General Information", icon: <MapPin className="w-4 h-4" /> },
   { id: "claimed-data", label: "Additional Information", icon: <Building2 className="w-4 h-4" /> },
    
-   { id: "assessments", label: "Assessments and Audits", icon: <ClipboardCheck className="w-4 h-4" /> },
+   { id: "assessments", label: "Assessments & Audits", icon: <ClipboardCheck className="w-4 h-4" /> },
    { id: "certifications", label: "Certifications", icon: <Award className="w-4 h-4" /> },
    { id: "environment", label: "Emissions & Energy Use", icon: <Leaf className="w-4 h-4" /> },
    { id: "living-wage", label: "Living Wage", icon: <Wallet className="w-4 h-4" /> },
