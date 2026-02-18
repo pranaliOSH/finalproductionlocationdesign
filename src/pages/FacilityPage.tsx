@@ -53,7 +53,6 @@ const facilityData = {
 };
 
 const contributors = [
-  { name: "Placeholder Provider", type: "auditor" as const, dataPoints: 52, lastContributed: "Jan 2026", listUploads: [{ listTitle: "2025 Facilities List", dateContributed: "Jan 8, 2026" }] },
   { name: "Sainsbury's", type: "brand" as const, dataPoints: 22, lastContributed: "Nov 2025", listUploads: [
     { listTitle: "Sainsbury's Global Suppliers 2025", dateContributed: "Nov 12, 2025" },
     { listTitle: "Sainsbury's Global Suppliers 2024", dateContributed: "Nov 8, 2024" },
