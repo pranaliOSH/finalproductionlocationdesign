@@ -159,7 +159,7 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
               All Data Sources
             </SheetTitle>
             <SheetDescription>
-              {totalContributors} organizations have contributed data to this production location
+              {totalContributors} organizations have shared data about this production location
             </SheetDescription>
           </SheetHeader>
 
