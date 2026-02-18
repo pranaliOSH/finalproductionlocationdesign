@@ -466,7 +466,7 @@ export default function FacilityPage() {
                 <DataField 
                   label="Company Phone"
                   value={facilityData.companyPhone}
-                  explanation="The primary contact phone number for this facility."
+                  explanation="Main phone number for contacting this production location directly."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
