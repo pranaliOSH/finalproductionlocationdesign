@@ -373,7 +373,7 @@ export default function FacilityPage() {
                   <DataField 
                     label="Industry / Sectors"
                     value={facilityData.sector}
-                    explanation="The primary industry or market this production location serves."
+                    explanation="The sector(s) that this location operates in. For example: Apparel, Electronics, Renewable Energy."
                     contributor="Sainsbury's"
                     contributedAt="November 3, 2025"
                     moreEntries={51}
