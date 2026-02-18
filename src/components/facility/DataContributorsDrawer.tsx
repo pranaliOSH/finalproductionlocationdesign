@@ -55,7 +55,7 @@ export function DataContributorsDrawer({
       <SheetHeader className="mb-4 pb-4 border-b border-border">
         <SheetTitle className="flex items-center gap-2">
           <Users className="w-5 h-5 text-primary" />
-          All Data Contributions
+          All Data Sources
         </SheetTitle>
         <p className="text-sm text-muted-foreground">
           {totalCount} organizations have contributed data for{" "}
