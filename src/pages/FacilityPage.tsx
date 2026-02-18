@@ -537,7 +537,7 @@ export default function FacilityPage() {
                 <DataField 
                   label="Minimum Order Quantity"
                   value={facilityData.minimumOrderQuantity}
-                  explanation="The minimum order size this production location accepts for production."
+                  explanation="Smallest order quantity this production location will accept from customers."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="medium"
