@@ -50,7 +50,7 @@ export function GrievanceMechanismData({ embedded = false }: GrievanceMechanismD
              </p>
              <p className="font-medium">
                <span>Attributes: </span>
-               <span className="text-muted-foreground">Third Party Grievance Mechanism</span>
+               <span className="text-muted-foreground">Coming Soon</span>
              </p>
              <p className="font-medium">
                <span>Established Date: </span>
