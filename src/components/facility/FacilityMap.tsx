@@ -153,7 +153,7 @@ export function FacilityMap({
             value={address}
             explanation="The physical street address of this production location."
             contributor="Zaber and Zubair Fabrics Ltd"
-            contributedAt="Nov 2022"
+            contributedAt="November 12, 2022"
             moreEntries={3}
             confidenceLevel="high"
             tableRow={true}
@@ -166,7 +166,7 @@ export function FacilityMap({
           value={`${latitude.toFixed(6)}, ${longitude.toFixed(6)}`}
           explanation="Geographic coordinates (latitude, longitude) of this production location."
           contributor="OS Hub Data Team"
-          contributedAt="Apr 2025"
+          contributedAt="April 7, 2025"
           moreEntries={122}
           confidenceLevel="high"
           tableRow={true}
