@@ -484,7 +484,7 @@ export default function FacilityPage() {
                 <DataField 
                   label="Office Address"
                   value={facilityData.officeAddress}
-                  explanation="The address of the parent company's office."
+                  explanation="Physical address of the office location."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
