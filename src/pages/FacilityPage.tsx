@@ -384,7 +384,7 @@ export default function FacilityPage() {
                   <DataField 
                     label="Product Type(s)"
                     value={facilityData.facilityType.join(", ")}
-                    explanation="The types of production activities performed at this location."
+                    explanation="The type of products produced at this location. For example: Shirts, Laptops, Solar Panels."
                     contributor="OS Hub Research Team"
                     contributedAt="August 19, 2025"
                     moreEntries={5}
