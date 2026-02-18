@@ -13,7 +13,7 @@ const sections = [
    
    { id: "assessments", label: "Assessments and Audits", icon: <ClipboardCheck className="w-4 h-4" /> },
    { id: "certifications", label: "Certifications", icon: <Award className="w-4 h-4" /> },
-   { id: "environment", label: "Emissions", icon: <Leaf className="w-4 h-4" /> },
+   { id: "environment", label: "Emissions & Energy Use", icon: <Leaf className="w-4 h-4" /> },
    { id: "living-wage", label: "Living Wage", icon: <Wallet className="w-4 h-4" /> },
    { id: "grievance-mechanism", label: "Grievance Mechanism", icon: <ShieldAlert className="w-4 h-4" /> },
 ];
