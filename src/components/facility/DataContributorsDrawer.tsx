@@ -35,7 +35,7 @@ const mockListTitles: Record<string, string> = {
   "Walmart": "Walmart Supplier Disclosure",
   "Gap Inc.": "Gap Inc. Factory List",
   "Primark": "Primark Factory Disclosure",
-  "C&A": "C&A Supplier List 2025",
+  "C&A": "C&A Supplier List 2025"
 };
 
 function getListTitle(name: string): string | undefined {
@@ -48,7 +48,7 @@ export function DataContributorsDrawer({
   promotedValue,
   promotedContributor,
   promotedDate,
-  contributors,
+  contributors
 }: DataContributorsDrawerProps) {
   return (
     <SheetContent className="w-[400px] sm:w-[540px] overflow-y-auto">
@@ -66,7 +66,7 @@ export function DataContributorsDrawer({
       {/* Promoted contribution */}
       <div className="mb-4">
         <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
-          Promoted Contribution
+          Highlighted Data Point   
         </h4>
 
         {/* Why this data is displayed */}
@@ -84,22 +84,22 @@ export function DataContributorsDrawer({
         <div className="bg-muted/50 rounded-lg p-4 border border-border">
           <div className="font-medium mb-3">{promotedValue || "Multiple values"}</div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            {promotedContributor && (
-              <a
-                href={`/contributor/${encodeURIComponent(promotedContributor)}`}
-                className="font-medium text-primary hover:underline flex items-center gap-1"
-              >
+            {promotedContributor &&
+            <a
+              href={`/contributor/${encodeURIComponent(promotedContributor)}`}
+              className="font-medium text-primary hover:underline flex items-center gap-1">
+
                 {promotedContributor}
                 <ExternalLink className="w-3 h-3" />
               </a>
-            )}
-            {promotedDate && (
-              <>
+            }
+            {promotedDate &&
+            <>
                 <span className="text-muted-foreground/50">•</span>
                 <Clock className="w-3.5 h-3.5" />
                 <span>{promotedDate}</span>
               </>
-            )}
+            }
           </div>
         </div>
       </div>
@@ -125,8 +125,8 @@ export function DataContributorsDrawer({
                   href="https://info.opensupplyhub.org/resources/an-open-data-model"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 mt-1.5 font-medium text-blue-700 hover:underline"
-                >
+                  className="inline-flex items-center gap-1 mt-1.5 font-medium text-blue-700 hover:underline">
+
                   Learn more about our open data model →
                 </a>
               </div>
@@ -139,16 +139,16 @@ export function DataContributorsDrawer({
               return (
                 <div
                   key={i}
-                  className="rounded-lg border border-border hover:bg-muted/30 transition-colors overflow-hidden"
-                >
+                  className="rounded-lg border border-border hover:bg-muted/30 transition-colors overflow-hidden">
+
                   {/* Value + contributor */}
                   <div className="p-3 pb-2">
                     <div className="text-sm font-medium mb-2 text-foreground">{c.value}</div>
                     <div className="flex items-center justify-between">
                       <a
                         href={`/contributor/${encodeURIComponent(c.name)}`}
-                        className="flex items-center gap-1 text-xs font-medium text-primary hover:underline"
-                      >
+                        className="flex items-center gap-1 text-xs font-medium text-primary hover:underline">
+
                         {c.name}
                         <ExternalLink className="w-3 h-3" />
                       </a>
@@ -159,12 +159,12 @@ export function DataContributorsDrawer({
                     </div>
                   </div>
 
-                </div>
-              );
+                </div>);
+
             })}
           </div>
         </div>
       </div>
-    </SheetContent>
-  );
+    </SheetContent>);
+
 }
