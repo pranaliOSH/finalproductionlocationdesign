@@ -108,7 +108,7 @@ export function DataContributorsDrawer({
         {/* Other contributions */}
         <div>
           <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
-            Other Contributions ({contributors.length})
+            Other Data Sources ({contributors.length})
           </h4>
 
           {/* Explanation box */}
