@@ -72,7 +72,7 @@ export function DataContributorsDrawer({
         {/* Why this data is displayed */}
         <div className="mb-4 p-3 bg-primary/5 rounded-lg border border-primary/20">
           <h4 className="text-xs font-medium text-primary mb-1.5">
-            Why is this data displayed over other contributions?
+            Why is this data source displayed first?
           </h4>
           <p className="text-xs text-muted-foreground leading-relaxed">
             OS Hub prioritizes data from claimed production location owners and verified
