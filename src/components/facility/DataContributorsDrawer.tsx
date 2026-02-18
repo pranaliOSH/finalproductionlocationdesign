@@ -75,7 +75,7 @@ export function DataContributorsDrawer({
             Why is this data source displayed first?
           </h4>
           <p className="text-xs text-muted-foreground leading-relaxed">
-            OS Hub prioritizes data sources in this order: (1) claimed locations where management submitted data, (2) verified contributors' data, (3) most frequently submitted values, (4) oldest submissions. The OS Hub team actively moderates to promote quality data. To request reordering, email Support with the OS ID, preferred data entry, and justification.
+            OS Hub prioritizes data in this order: (1) claimed facilities where owners/managers submitted data, (2) verified contributors' data, (3) most frequently submitted values, (4) oldest submissions. The OS Hub team actively moderates to promote quality data. To request reordering, email Support with the OS ID, preferred data entry, and justification.
           
 
           </p>
@@ -117,7 +117,7 @@ export function DataContributorsDrawer({
               <Info className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
               <div className="text-sm text-blue-900">
                 <p>
-                  Multiple organizations may have contributed information for this data point. You can see the list of historical data sources below. Click on the organization name to learn more about them and the data they have shared
+                  Multiple organizations may have shared information for this data point. You can see the list of historical data sources below. Click on the organization name to learn more about them and the data they have shared
                 
 
                 </p>
