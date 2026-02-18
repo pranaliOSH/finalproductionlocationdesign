@@ -555,7 +555,7 @@ export default function FacilityPage() {
                 <DataField 
                   label="Percentage of Female Workers"
                   value={`${facilityData.percentageFemaleWorkers}%`}
-                  explanation="The percentage of the workforce that identifies as female."
+                  explanation="Percentage of female employees out of the total workforce at this location."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
