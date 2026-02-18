@@ -18,11 +18,11 @@ interface FacilityHeaderProps {
 }
 function ConfidenceDots({
   level
-}: {
-  level: number;
-}) {
+
+
+}: {level: number;}) {
   return <div className="flex items-center gap-1">
-      {[1, 2, 3, 4, 5].map(dot => <div key={dot} className={`w-2 h-2 rounded-full ${dot <= level ? "bg-verified" : "bg-confidence-low"}`} />)}
+      {[1, 2, 3, 4, 5].map((dot) => <div key={dot} className={`w-2 h-2 rounded-full ${dot <= level ? "bg-verified" : "bg-confidence-low"}`} />)}
     </div>;
 }
 export function FacilityHeader({
@@ -62,9 +62,9 @@ export function FacilityHeader({
              <span className="text-xl font-bold text-foreground">OS ID:</span>
              <span className="font-mono text-2xl font-bold text-foreground">{osId}</span>
             <InfoTooltip
-              description="The OS ID is a free, unique identifier automatically assigned to each production location in OS Hub. Use it to track this location across systems, share it with partners, or reference it in compliance documentation."
-              learnMoreHref="https://info.opensupplyhub.org/resources/os-id"
-            />
+            description="The OS ID is a free, unique identifier automatically assigned to each production location in OS Hub. Use it to track this location across systems, share it with partners, or reference it in compliance documentation."
+            learnMoreHref="https://info.opensupplyhub.org/resources/os-id" />
+
           </div>
           <div className="flex items-center gap-3">
             <Button variant="outline" size="sm" onClick={copyOsId} className="gap-2 text-xs">
@@ -86,21 +86,21 @@ export function FacilityHeader({
           <div className="flex items-center gap-2">
             <h3 className="font-medium text-lg text-foreground">Understanding Data Sources</h3>
             <InfoTooltip
-              description="Open Supply Hub is collaboratively mapping global supply chains. This model means that data comes into the platform in a few ways."
-              learnMoreHref="https://info.opensupplyhub.org/resources/an-open-data-model"
-            />
+            description="Open Supply Hub is an open data platform, where any organization who needs to share or search supply chain data can do so in a free and accessible tool. Data in OS Hub is uploaded by stakeholders across sectors and supply chains including brands and retailers, civil society, multi-stakeholder initiatives, certification schemes, factory groups and more."
+            learnMoreHref="https://info.opensupplyhub.org/resources/an-open-data-model" />
+
           </div>
           <div className="flex items-center gap-3">
-            <button 
-              onClick={() => setIsDataSourcesOpen(!isDataSourcesOpen)}
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
+            <button
+            onClick={() => setIsDataSourcesOpen(!isDataSourcesOpen)}
+            className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+
               {isDataSourcesOpen ? "Close" : "Open"}
             </button>
-            <Switch 
-              checked={isDataSourcesOpen} 
-              onCheckedChange={setIsDataSourcesOpen}
-            />
+            <Switch
+            checked={isDataSourcesOpen}
+            onCheckedChange={setIsDataSourcesOpen} />
+
           </div>
         </div>
         
@@ -109,27 +109,27 @@ export function FacilityHeader({
             <CheckCircle2 className="w-5 h-5 text-source-claimed flex-shrink-0 mt-0.5" />
             <div>
               <p className="text-base font-medium text-source-claimed">Claimed</p>
-              <p className={`text-sm text-muted-foreground overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-20 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>
-                Data confirmed by production location owner or manager
-              </p>
+              <p className={`text-sm text-muted-foreground overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-20 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>Data submitted by production location management
+
+            </p>
             </div>
           </div>
           <div className="flex items-start gap-2">
             <Users className="w-5 h-5 text-source-contributed flex-shrink-0 mt-0.5" />
             <div>
               <p className="text-base font-medium text-source-contributed">Crowdsourced</p>
-              <p className={`text-sm text-muted-foreground overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-20 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>
-                Data from community contributors and OS Hub research team
-              </p>
+              <p className={`text-sm text-muted-foreground overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-20 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>Data submitted by supply chain stakeholders and OS Hub’s research team
+
+            </p>
             </div>
           </div>
           <div className="flex items-start gap-2">
             <Handshake className="w-5 h-5 text-source-partner flex-shrink-0 mt-0.5" />
             <div>
               <p className="text-base font-medium text-source-partner">Partner Data</p>
-              <p className={`text-sm text-muted-foreground overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-20 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>
-                Data from integration partners and third-party platforms
-              </p>
+              <p className={`text-sm text-muted-foreground overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-20 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>Data shared by third-party platforms who opt in to providing social or environmental information about this location
+
+            </p>
             </div>
           </div>
         </div>
