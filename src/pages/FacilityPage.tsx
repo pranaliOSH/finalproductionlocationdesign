@@ -511,7 +511,7 @@ export default function FacilityPage() {
                 <DataField 
                   label="Certifications / Standards / Regulations"
                   value={facilityData.description}
-                  explanation="Certifications and standards the facility self-reports as adhering to. OS Hub does not verify this information."
+                  explanation="Certifications and standards the production location self-reports as adhering to. OS Hub does not verify this information."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="January 15, 2025"
                   confidenceLevel="low"
