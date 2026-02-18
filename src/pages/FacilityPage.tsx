@@ -353,7 +353,7 @@ export default function FacilityPage() {
                     value={facilityData.name}
                     explanation="The official name of this production location."
                     contributor="Zaber and Zubair Fabrics Ltd"
-                    contributedAt="Nov 2022"
+                    contributedAt="November 12, 2022"
                     moreEntries={8}
                     confidenceLevel="high"
                     tableRow={true}
@@ -364,7 +364,7 @@ export default function FacilityPage() {
                     value={facilityData.parentCompany}
                     explanation="The company or group that owns or controls this production location."
                     contributor="Zaber and Zubair Fabrics Ltd"
-                    contributedAt="Nov 2022"
+                    contributedAt="November 12, 2022"
                     moreEntries={6}
                     confidenceLevel="high"
                     tableRow={true}
@@ -375,7 +375,7 @@ export default function FacilityPage() {
                     value={facilityData.sector}
                     explanation="The primary industry or market this production location serves."
                     contributor="Sainsbury's"
-                    contributedAt="Nov 2025"
+                    contributedAt="November 3, 2025"
                     moreEntries={51}
                     confidenceLevel="high"
                     tableRow={true}
@@ -386,7 +386,7 @@ export default function FacilityPage() {
                     value={facilityData.facilityType.join(", ")}
                     explanation="The types of production activities performed at this location."
                     contributor="OS Hub Research Team"
-                    contributedAt="Aug 2025"
+                    contributedAt="August 19, 2025"
                     moreEntries={5}
                     confidenceLevel="medium"
                     tableRow={true}
@@ -397,7 +397,7 @@ export default function FacilityPage() {
                     value={facilityData.locationType.join(", ")}
                     explanation="The type of location (e.g., manufacturing facility, warehouse, office)."
                     contributor="Zaber and Zubair Fabrics Ltd"
-                    contributedAt="Nov 2022"
+                    contributedAt="November 12, 2022"
                     moreEntries={3}
                     confidenceLevel="high"
                     tableRow={true}
@@ -408,7 +408,7 @@ export default function FacilityPage() {
                     value={facilityData.processingType}
                     explanation="The stage of production this facility handles (e.g., raw materials, assembly, packaging)."
                     contributor="JD Williams"
-                    contributedAt="Nov 2025"
+                    contributedAt="November 3, 2025"
                     moreEntries={44}
                     confidenceLevel="high"
                     tableRow={true}
@@ -419,7 +419,7 @@ export default function FacilityPage() {
                     value={facilityData.workerCount.toLocaleString()}
                     explanation="The total number of workers employed at this production location."
                     contributor="Marks & Spencer"
-                    contributedAt="Sep 2025"
+                    contributedAt="September 8, 2025"
                     moreEntries={12}
                     confidenceLevel="high"
                     tableRow={true}
@@ -432,7 +432,7 @@ export default function FacilityPage() {
                   latitude={facilityData.latitude}
                   longitude={facilityData.longitude}
                   contributorCount={122}
-                  lastVerified="Apr 2025"
+                  lastVerified="April 7, 2025"
                   address={facilityData.address}
                 />
               </div>
@@ -446,7 +446,7 @@ export default function FacilityPage() {
                   value={facilityData.nativeName}
                   explanation="The facility name in its local language."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="high"
                   tableRow={true}
                 />
@@ -459,7 +459,7 @@ export default function FacilityPage() {
                   }
                   explanation="The official website for this company."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="high"
                   tableRow={true}
                 />
@@ -468,7 +468,7 @@ export default function FacilityPage() {
                   value={facilityData.companyPhone}
                   explanation="The primary contact phone number for this facility."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="high"
                   tableRow={true}
                 />
@@ -477,7 +477,7 @@ export default function FacilityPage() {
                   value={facilityData.officeName}
                   explanation="The name of the parent company's office location."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="high"
                   tableRow={true}
                 />
@@ -486,7 +486,7 @@ export default function FacilityPage() {
                   value={facilityData.officeAddress}
                   explanation="The address of the parent company's office."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="high"
                   tableRow={true}
                 />
@@ -495,7 +495,7 @@ export default function FacilityPage() {
                   value={facilityData.officeCountry}
                   explanation="The country where the parent company's office is located."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="high"
                   tableRow={true}
                 />
@@ -504,7 +504,7 @@ export default function FacilityPage() {
                   value={facilityData.productionLocationDescription}
                   explanation="A description of this production location's capabilities and focus."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="high"
                   tableRow={true}
                 />
@@ -513,7 +513,7 @@ export default function FacilityPage() {
                   value={facilityData.description}
                   explanation="Certifications and standards the facility adheres to."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Jan 2025"
+                  contributedAt="January 15, 2025"
                   confidenceLevel="low"
                   tableRow={true}
                 />
@@ -530,7 +530,7 @@ export default function FacilityPage() {
                   }
                   explanation="Industry associations and organizations this production location is a member of."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="high"
                   tableRow={true}
                 />
@@ -539,7 +539,7 @@ export default function FacilityPage() {
                   value={facilityData.minimumOrderQuantity}
                   explanation="The minimum order size this production location accepts for production."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="medium"
                   tableRow={true}
                 />
@@ -548,7 +548,7 @@ export default function FacilityPage() {
                   value={facilityData.averageLeadTime}
                   explanation="The typical time from order placement to delivery."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="medium"
                   tableRow={true}
                 />
@@ -557,7 +557,7 @@ export default function FacilityPage() {
                   value={`${facilityData.percentageFemaleWorkers}%`}
                   explanation="The percentage of the workforce that identifies as female."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="high"
                   tableRow={true}
                 />
@@ -566,7 +566,7 @@ export default function FacilityPage() {
                   value={facilityData.estimatedAnnualThroughput}
                   explanation="The estimated annual production output of this production location."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="medium"
                   tableRow={true}
                 />
@@ -575,7 +575,7 @@ export default function FacilityPage() {
                   value={facilityData.actualAnnualEnergyConsumption}
                   explanation="The actual annual energy consumption of this production location."
                   contributor="Zaber and Zubair Fabrics Ltd"
-                  contributedAt="Nov 2022"
+                  contributedAt="November 12, 2022"
                   confidenceLevel="high"
                   tableRow={true}
                 />

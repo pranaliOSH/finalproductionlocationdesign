@@ -30,7 +30,7 @@ const contributorNames = [
   "Renewcell", "Evrnu", "Worn Again Technologies", "Circ", "Ambercycle",
   "Carbios", "Protein Evolution", "Spiber", "Bolt Threads", "Modern Meadow"
 ];
-const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 // Mock value variations for different field types
 const valueVariations: Record<string, string[]> = {
@@ -84,9 +84,10 @@ function generateContributors(count: number, fieldLabel: string, baseValue: stri
     const monthIndex = Math.floor(Math.random() * 12);
     const month = months[monthIndex];
     const year = Math.random() > 0.3 ? "2025" : "2024";
+    const day = Math.floor(Math.random() * 28) + 1;
     const sortValue = (year === "2025" ? 2025 : 2024) * 12 + monthIndex;
     const contributedValue = variations[i % variations.length];
-    contributors.push({ name, type, contributedAt: `${month} ${year}`, sortValue, value: contributedValue });
+    contributors.push({ name, type, contributedAt: `${month} ${day}, ${year}`, sortValue, value: contributedValue });
   }
   contributors.sort((a, b) => b.sortValue - a.sortValue);
   return contributors;
