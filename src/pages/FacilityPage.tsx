@@ -444,7 +444,7 @@ export default function FacilityPage() {
                 <DataField 
                   label="Name in Native Language"
                   value={facilityData.nativeName}
-                  explanation="The facility name in its local language."
+                  explanation="The production location name in the local language if different from the English name."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
