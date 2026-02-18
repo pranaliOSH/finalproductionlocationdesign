@@ -362,7 +362,7 @@ export default function FacilityPage() {
                   <DataField 
                     label="Parent Company"
                     value={facilityData.parentCompany}
-                    explanation="The company or group that owns or controls this production location."
+                    explanation="The company or group that holds majority ownership for this production location."
                     contributor="Zaber and Zubair Fabrics Ltd"
                     contributedAt="November 12, 2022"
                     moreEntries={6}
