@@ -113,7 +113,7 @@ export function EnrichedDataPartnerships({
                 <span className="font-bold text-lg">
                   Assessments and Audits
                   <InfoTooltip
-                    description="Learn more about this data, how it's sourced, and how to use it."
+                    description="Learn more about this data, how it is sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/assessments" />
 
                 </span>
@@ -156,7 +156,7 @@ export function EnrichedDataPartnerships({
                 <span className="font-bold text-lg">
                   Certifications
                   <InfoTooltip
-                    description="Learn more about this data, how it's sourced, and how to use it."
+                    description="Learn more about this data, how it is sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/certifications" />
 
                 </span>
@@ -199,7 +199,7 @@ export function EnrichedDataPartnerships({
                 <span className="font-bold text-lg">
                   Emissions
                   <InfoTooltip
-                    description="Learn more about this data, how it's sourced, and how to use it."
+                    description="Learn more about this data, how it is sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/emissions" />
 
                 </span>
@@ -242,7 +242,7 @@ export function EnrichedDataPartnerships({
                   <span className="font-bold text-lg">
                     Living Wage
                     <InfoTooltip
-                    description="Learn more about this data, how it's sourced, and how to use it."
+                    description="Learn more about this data, how it is sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/living-wage" />
 
                   </span>
@@ -285,7 +285,7 @@ export function EnrichedDataPartnerships({
                   <span className="font-bold text-lg">
                     Grievance Mechanisms
                     <InfoTooltip
-                    description="Learn more about this data, how it's sourced, and how to use it."
+                    description="Learn more about this data, how it is sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/grievance-mechanisms" />
 
                   </span>
