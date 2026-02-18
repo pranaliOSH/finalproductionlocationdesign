@@ -131,7 +131,7 @@ export function FacilityHeader({
               <p className="text-base font-medium text-source-partner">Partner Data</p>
               <div className={`overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-24 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>
                 <p className="text-sm text-muted-foreground">Data shared by third-party platforms who opt in to providing social or environmental information about this location</p>
-                <a href="https://info.opensupplyhub.org/resources/partnerships" target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-medium text-primary hover:underline mt-1">Learn more →</a>
+                <a href="https://info.opensupplyhub.org/data-integrations" target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-medium text-primary hover:underline mt-1">Learn more →</a>
               </div>
             </div>
           </div>
