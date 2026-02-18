@@ -106,7 +106,7 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
           <h3 className="text-lg font-semibold text-foreground">Supply Chain Network</h3>
         </div>
 
-        <p className="text-sm text-muted-foreground">Organizations that have shared General Information about this production location.
+        <p className="text-sm text-muted-foreground">Organizations that have shared general information about this production location.
 
         </p>
 
