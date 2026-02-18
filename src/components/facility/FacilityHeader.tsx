@@ -109,27 +109,30 @@ export function FacilityHeader({
             <CheckCircle2 className="w-5 h-5 text-source-claimed flex-shrink-0 mt-0.5" />
             <div>
               <p className="text-base font-medium text-source-claimed">Claimed</p>
-              <p className={`text-sm text-muted-foreground overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-20 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>Data submitted by production location management
-
-            </p>
+              <div className={`overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-24 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>
+                <p className="text-sm text-muted-foreground">Data submitted by production location management</p>
+                <a href="https://info.opensupplyhub.org/resources/claimed-profiles" target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-medium text-primary hover:underline mt-1">Learn more →</a>
+              </div>
             </div>
           </div>
           <div className="flex items-start gap-2">
             <Users className="w-5 h-5 text-source-contributed flex-shrink-0 mt-0.5" />
             <div>
               <p className="text-base font-medium text-source-contributed">Crowdsourced</p>
-              <p className={`text-sm text-muted-foreground overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-20 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>Data submitted by supply chain stakeholders and OS Hub’s research team
-
-            </p>
+              <div className={`overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-24 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>
+                <p className="text-sm text-muted-foreground">Data submitted by supply chain stakeholders and OS Hub's research team</p>
+                <a href="https://info.opensupplyhub.org/resources/an-open-data-model" target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-medium text-primary hover:underline mt-1">Learn more →</a>
+              </div>
             </div>
           </div>
           <div className="flex items-start gap-2">
             <Handshake className="w-5 h-5 text-source-partner flex-shrink-0 mt-0.5" />
             <div>
               <p className="text-base font-medium text-source-partner">Partner Data</p>
-              <p className={`text-sm text-muted-foreground overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-20 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>Data shared by third-party platforms who opt in to providing social or environmental information about this location
-
-            </p>
+              <div className={`overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-24 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>
+                <p className="text-sm text-muted-foreground">Data shared by third-party platforms who opt in to providing social or environmental information about this location</p>
+                <a href="https://info.opensupplyhub.org/resources/partnerships" target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-medium text-primary hover:underline mt-1">Learn more →</a>
+              </div>
             </div>
           </div>
         </div>
