@@ -73,7 +73,7 @@ import { ShieldAlert } from "lucide-react";
  
        <div className="mt-6 pt-4 border-t border-border bg-muted/50 -mx-4 px-4 py-3 rounded-md space-y-2">
           <p className="text-base text-muted-foreground">
-            <span className="font-bold text-primary">Disclaimer:</span> Open Supply Hub does not operate a grievance mechanism and cannot receive or investigate complaints. Information shown is based on partner-submitted sources and may not reflect all available mechanisms, including government or state-based processes. Open Supply Hub does not verify the effectiveness, accessibility, or outcomes of any listed mechanism.
+            <span className="font-bold text-primary">Disclaimer:</span> Open Supply Hub does not operate a grievance mechanism and cannot receive or investigate complaints. As it stands, this data point is intended to point to active grievance mechanisms operating in or covering this facility, but is NOT intended to be a tool for submitting complaints. Information shown is based on partner-submitted sources and may not reflect all available mechanisms, including internal systems, government or state-based processes, or additional third-party mechanisms. Open Supply Hub does not verify the effectiveness, accessibility, or outcomes of any listed mechanism.
           </p>
         </div>
      </>
