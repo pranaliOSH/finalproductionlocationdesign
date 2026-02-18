@@ -573,7 +573,7 @@ export default function FacilityPage() {
                 <DataField 
                   label="Actual Annual Energy Consumption"
                   value={facilityData.actualAnnualEnergyConsumption}
-                  explanation="The actual annual energy consumption of this production location."
+                  explanation="Annual energy consumption by source reported by this production location."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
