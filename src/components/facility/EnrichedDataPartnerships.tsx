@@ -156,7 +156,7 @@ export function EnrichedDataPartnerships({
                 <span className="font-bold text-lg">
                   Certifications
                   <InfoTooltip
-                    description="Certifications provide third-party verification that production locations meet recognized standards for quality, environmental, and social responsibility."
+                    description="Learn more about this data, how it's sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/certifications" />
 
                 </span>
