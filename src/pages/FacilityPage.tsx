@@ -493,7 +493,7 @@ export default function FacilityPage() {
                 <DataField 
                   label="Office Country"
                   value={facilityData.officeCountry}
-                  explanation="The country where the parent company's office is located."
+                  explanation="The country where the corporate office or headquarter is located."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
