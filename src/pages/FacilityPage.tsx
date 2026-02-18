@@ -341,7 +341,7 @@ export default function FacilityPage() {
             {/* Two column layout for identity and map */}
             <div id="section-location" className="grid lg:grid-cols-[1fr_500px] gap-6">
               <DataSection
-                title="Location Identity"
+                title="General Information"
                 category="identity"
                 icon={<Building2 className="w-5 h-5" />}
                 explanation="Core identifying information about this production location."
