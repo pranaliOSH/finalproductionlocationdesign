@@ -113,7 +113,7 @@ export function EnrichedDataPartnerships({
                 <span className="font-bold text-lg">
                   Assessments and Audits
                   <InfoTooltip
-                    description="Assessments provide standardized evaluations of production location practices, helping brands verify compliance and identify areas for improvement."
+                    description="Learn more about this data, how it's sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/assessments" />
 
                 </span>
