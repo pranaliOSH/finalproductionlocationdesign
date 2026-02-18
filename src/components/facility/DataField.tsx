@@ -127,7 +127,7 @@ export function DataField({
     <Sheet>
       <SheetTrigger asChild>
         <button className="text-primary hover:underline font-medium">
-          +{moreEntries} sources
+          +{moreEntries} data sources
         </button>
       </SheetTrigger>
       <DataContributorsDrawer
