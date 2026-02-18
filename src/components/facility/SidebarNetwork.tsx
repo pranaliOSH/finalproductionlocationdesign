@@ -33,7 +33,7 @@ const typeLabels: Record<ContributorType, string> = {
   supplier: "Supplier",
   msi: "Multi-Stakeholder Initiative",
   union: "Union",
-  other: "Other",
+  other: "Other"
 };
 
 const typeColors: Record<ContributorType, string> = {
@@ -44,7 +44,7 @@ const typeColors: Record<ContributorType, string> = {
   supplier: "bg-orange-50 text-orange-600",
   msi: "bg-teal-50 text-teal-600",
   union: "bg-rose-50 text-rose-600",
-  other: "bg-slate-50 text-slate-600",
+  other: "bg-slate-50 text-slate-600"
 };
 
 const typeIcons: Record<ContributorType, React.ReactNode> = {
@@ -55,7 +55,7 @@ const typeIcons: Record<ContributorType, React.ReactNode> = {
   supplier: <Factory className="w-3.5 h-3.5" />,
   msi: <Handshake className="w-3.5 h-3.5" />,
   union: <Users className="w-3.5 h-3.5" />,
-  other: <HelpCircle className="w-3.5 h-3.5" />,
+  other: <HelpCircle className="w-3.5 h-3.5" />
 };
 
 const parseDate = (dateStr: string): Date => {
@@ -76,17 +76,17 @@ const parseDate = (dateStr: string): Date => {
 export function SidebarNetwork({ contributors, totalContributors, typeCounts }: SidebarNetworkProps) {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
-  const sortedTypeCounts = typeCounts 
-    ? Object.entries(typeCounts)
-        .filter(([_, count]) => count && count > 0)
-        .sort(([, a], [, b]) => (b || 0) - (a || 0))
-        .map(([type, count]) => ({ type: type as ContributorType, count: count || 0 }))
-    : [];
+  const sortedTypeCounts = typeCounts ?
+  Object.entries(typeCounts).
+  filter(([_, count]) => count && count > 0).
+  sort(([, a], [, b]) => (b || 0) - (a || 0)).
+  map(([type, count]) => ({ type: type as ContributorType, count: count || 0 })) :
+  [];
 
   const topContributors = useMemo(() => {
-    return [...contributors]
-      .sort((a, b) => parseDate(b.lastContributed).getTime() - parseDate(a.lastContributed).getTime())
-      .slice(0, 7);
+    return [...contributors].
+    sort((a, b) => parseDate(b.lastContributed).getTime() - parseDate(a.lastContributed).getTime()).
+    slice(0, 7);
   }, [contributors]);
 
   // All contributors sorted by most recent for the drawer
@@ -107,47 +107,47 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
         </div>
 
         <p className="text-sm text-muted-foreground">
-          Organizations contributing data to this production location
+          Organizations that have shared data about this production location.
         </p>
 
         {/* Type counts */}
         <div className="flex flex-wrap gap-1.5">
-          {sortedTypeCounts.map(({ type, count }) => (
-            <div 
-              key={type} 
-              className="flex items-center gap-1 px-2 py-1 rounded-full bg-secondary/50 text-xs"
-            >
+          {sortedTypeCounts.map(({ type, count }) =>
+          <div
+            key={type}
+            className="flex items-center gap-1 px-2 py-1 rounded-full bg-secondary/50 text-xs">
+
               <span className="font-semibold text-foreground">{count}</span>
               <span className="text-muted-foreground">{typeLabels[type]}{count > 1 ? 's' : ''}</span>
             </div>
-          ))}
+          )}
         </div>
 
         {/* Top contributors list */}
         <div className="space-y-1">
-          {topContributors.map((contributor) => (
-            <a
-              key={contributor.name}
-              href={`/contributor/${encodeURIComponent(contributor.name)}`}
-              className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-secondary/50 transition-colors group"
-            >
+          {topContributors.map((contributor) =>
+          <a
+            key={contributor.name}
+            href={`/contributor/${encodeURIComponent(contributor.name)}`}
+            className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-secondary/50 transition-colors group">
+
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-medium text-foreground group-hover:text-primary truncate">
                     {contributor.name}
                   </p>
                 </div>
             </a>
-          ))}
+          )}
         </div>
 
-        {totalContributors > 7 && (
-          <button
-            onClick={() => setIsSheetOpen(true)}
-            className="w-full py-2 text-sm text-primary hover:bg-primary/5 rounded-lg transition-colors font-medium"
-          >
+        {totalContributors > 7 &&
+        <button
+          onClick={() => setIsSheetOpen(true)}
+          className="w-full py-2 text-sm text-primary hover:bg-primary/5 rounded-lg transition-colors font-medium">
+
             View all {totalContributors} contributors
           </button>
-        )}
+        }
       </div>
 
       {/* Full contributors sheet */}
@@ -175,8 +175,8 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
                   href="https://info.opensupplyhub.org/resources/an-open-data-model"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 mt-1.5 font-medium text-blue-700 hover:underline"
-                >
+                  className="inline-flex items-center gap-1 mt-1.5 font-medium text-blue-700 hover:underline">
+
                   Learn more about our open data model →
                 </a>
               </div>
@@ -185,31 +185,31 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
 
           {/* Type summary badges */}
           <div className="flex flex-wrap gap-2 pb-4 border-b border-border">
-            {sortedTypeCounts.map(({ type, count }) => (
-              <div 
-                key={type} 
-                className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-border bg-secondary/30"
-              >
+            {sortedTypeCounts.map(({ type, count }) =>
+            <div
+              key={type}
+              className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-border bg-secondary/30">
+
                 <span className="text-sm font-medium text-foreground">{count}</span>
                 <span className="text-xs text-muted-foreground">{typeLabels[type]}{count > 1 ? 's' : ''}</span>
               </div>
-            ))}
+            )}
           </div>
 
           {/* Contributors list sorted by most recent */}
           <div className="py-4 space-y-3">
-            {sortedContributors.map((contributor) => (
-              <div
-                key={contributor.name}
-                className="rounded-lg bg-secondary/50 hover:bg-secondary transition-colors overflow-hidden"
-              >
+            {sortedContributors.map((contributor) =>
+            <div
+              key={contributor.name}
+              className="rounded-lg bg-secondary/50 hover:bg-secondary transition-colors overflow-hidden">
+
                 {/* Contributor header with icon and link */}
                 <div className="flex items-center gap-3 p-3 pb-2">
                   <div className="flex-1 min-w-0">
                     <a
-                      href={`/contributor/${encodeURIComponent(contributor.name)}`}
-                      className="font-medium text-primary hover:underline flex items-center gap-1"
-                    >
+                    href={`/contributor/${encodeURIComponent(contributor.name)}`}
+                    className="font-medium text-primary hover:underline flex items-center gap-1">
+
                       <span className="truncate">{contributor.name}</span>
                       <ExternalLink className="w-3.5 h-3.5 flex-shrink-0" />
                     </a>
@@ -220,43 +220,43 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
                 </div>
 
                 {/* List uploads */}
-                {contributor.listUploads && contributor.listUploads.length > 0 && (
-                  <div className="px-3 pb-3 space-y-1.5">
-                    {contributor.listUploads.map((listUpload, idx) => (
-                      <div key={idx} className="ml-11 p-2.5 bg-background rounded-md border border-border/50">
+                {contributor.listUploads && contributor.listUploads.length > 0 &&
+              <div className="px-3 pb-3 space-y-1.5">
+                    {contributor.listUploads.map((listUpload, idx) =>
+                <div key={idx} className="ml-11 p-2.5 bg-background rounded-md border border-border/50">
                         <div className="flex items-center gap-1.5 text-xs text-muted-foreground mb-0.5">
                           <List className="w-3 h-3" />
                           <span>Uploaded via list</span>
                         </div>
                         <p className="text-sm font-medium text-foreground">{listUpload.listTitle}</p>
                       </div>
-                    ))}
-                  </div>
                 )}
+                  </div>
+              }
 
               {/* No list uploads — just show last contributed in the header */}
               </div>
-            ))}
+            )}
           </div>
 
           {/* Other Contributors summary at bottom */}
-          {sortedTypeCounts.length > 0 && (
-            <div className="border-t border-border pt-4 pb-2">
+          {sortedTypeCounts.length > 0 &&
+          <div className="border-t border-border pt-4 pb-2">
               <div className="flex items-center gap-2 mb-4">
                 <Users className="w-5 h-5 text-foreground" />
                 <h3 className="text-lg font-bold text-foreground">Other Contributors</h3>
               </div>
               <div className="divide-y divide-border">
-                {sortedTypeCounts.map(({ type, count }) => (
-                  <div key={type} className="py-3 text-sm text-foreground">
+                {sortedTypeCounts.map(({ type, count }) =>
+              <div key={type} className="py-3 text-sm text-foreground">
                     {count === 1 ? 'A' : count} {typeLabels[type]}{count > 1 ? 's' : ''}{count === 1 ? '' : ''}
                   </div>
-                ))}
+              )}
               </div>
             </div>
-          )}
+          }
         </SheetContent>
       </Sheet>
-    </>
-  );
+    </>);
+
 }
