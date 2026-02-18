@@ -199,7 +199,7 @@ export function EnrichedDataPartnerships({
                 <span className="font-bold text-lg">
                   Emissions
                   <InfoTooltip
-                    description="Environmental metrics help brands assess and reduce the ecological footprint of their supply chains by tracking emissions, resource usage, and waste."
+                    description="Learn more about this data, how it's sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/emissions" />
 
                 </span>
