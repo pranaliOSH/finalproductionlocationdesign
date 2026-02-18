@@ -110,7 +110,7 @@ export function FacilityHeader({
             <div>
               <p className="text-base font-medium text-source-claimed">Claimed</p>
               <div className={`overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-24 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>
-                <p className="text-sm text-muted-foreground">General and additional information submitted by production location management</p>
+                <p className="text-sm text-muted-foreground">General and additional information shared by production location management</p>
                 <a href="https://info.opensupplyhub.org/resources/claim-a-facility" target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-medium text-primary hover:underline mt-1">Learn more →</a>
               </div>
             </div>
@@ -120,7 +120,7 @@ export function FacilityHeader({
             <div>
               <p className="text-base font-medium text-source-contributed">Crowdsourced</p>
               <div className={`overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-24 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>
-                <p className="text-sm text-muted-foreground">General information submitted by supply chain stakeholders and OS Hub's research team</p>
+                <p className="text-sm text-muted-foreground">General information shared by supply chain stakeholders & OS Hub's research team</p>
                 <a href="https://info.opensupplyhub.org/resources/an-open-data-model" target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-medium text-primary hover:underline mt-1">Learn more →</a>
               </div>
             </div>
