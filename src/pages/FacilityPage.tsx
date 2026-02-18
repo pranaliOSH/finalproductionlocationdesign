@@ -417,7 +417,7 @@ export default function FacilityPage() {
                   <DataField 
                     label="Number of Workers"
                     value={facilityData.workerCount.toLocaleString()}
-                    explanation="The number or range of people employed at the location. For example: 100, 100-150."
+                    explanation="The number or range of people employed at this location. For example: 100, 100-150."
                     contributor="Marks & Spencer"
                     contributedAt="September 8, 2025"
                     moreEntries={12}
