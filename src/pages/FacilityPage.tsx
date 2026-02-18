@@ -349,7 +349,7 @@ export default function FacilityPage() {
                 singleColumn={true}
               >
                   <DataField 
-                    label="Production Location Name"
+                    label="Name"
                     value={facilityData.name}
                     explanation="The official name of this production location."
                     contributor="Zaber and Zubair Fabrics Ltd"
