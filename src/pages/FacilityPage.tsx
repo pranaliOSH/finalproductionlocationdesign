@@ -528,7 +528,7 @@ export default function FacilityPage() {
                       ))}
                     </div>
                   }
-                  explanation="Industry associations and organizations this production location is a member of."
+                  explanation="Industry associations and partner entities as declared by the production location. OS Hub does not independently verify this information."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
