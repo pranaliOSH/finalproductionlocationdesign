@@ -113,7 +113,7 @@ interface Assessment {
                 <span className="font-bold text-lg">
                   Assessments and Audits
                   <InfoTooltip
-                    description="Assessments provide standardized evaluations of production location practices, helping brands verify compliance and identify areas for improvement."
+                    description="Learn more about this data, how it's sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/assessments"
                   />
                 </span>
@@ -156,7 +156,7 @@ interface Assessment {
                 <span className="font-bold text-lg">
                   Certifications
                   <InfoTooltip
-                    description="Certifications provide third-party verification that production locations meet recognized standards for quality, environmental, and social responsibility."
+                    description="Learn more about this data, how it's sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/certifications"
                   />
                 </span>
@@ -199,7 +199,7 @@ interface Assessment {
                 <span className="font-bold text-lg">
                   Emissions
                   <InfoTooltip
-                    description="Environmental metrics help brands assess and reduce the ecological footprint of their supply chains by tracking emissions, resource usage, and waste."
+                    description="Learn more about this data, how it's sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/emissions"
                   />
                 </span>
@@ -242,7 +242,7 @@ interface Assessment {
                   <span className="font-bold text-lg">
                     Living Wage
                     <InfoTooltip
-                      description="Living wage data helps assess whether workers earn enough to meet basic needs, supporting fair compensation practices across supply chains."
+                      description="Learn more about this data, how it's sourced, and how to use it."
                       learnMoreHref="https://info.opensupplyhub.org/resources/living-wage"
                     />
                   </span>
@@ -285,7 +285,7 @@ interface Assessment {
                   <span className="font-bold text-lg">
                     Grievance Mechanisms
                     <InfoTooltip
-                      description="Grievance mechanisms allow workers to report concerns anonymously. These integrations show which third-party platforms are active at this facility."
+                      description="Learn more about this data, how it's sourced, and how to use it."
                       learnMoreHref="https://info.opensupplyhub.org/resources/grievance-mechanisms"
                     />
                   </span>
