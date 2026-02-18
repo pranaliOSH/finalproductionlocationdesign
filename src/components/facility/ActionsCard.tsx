@@ -16,7 +16,7 @@ export function ActionsCard({ isClaimed }: ActionsCardProps) {
       <div className="flex flex-col gap-1.5">
         <Button size="sm" variant="ghost" className="gap-2 h-9 justify-start text-base">
           <Plus className="w-4 h-4" />
-          Add Data
+          Suggest Correction
         </Button>
         <Button size="sm" variant="ghost" className="gap-2 h-9 justify-start text-base">
           <Copy className="w-4 h-4" />
