@@ -39,7 +39,7 @@ export function ClaimedDataAccordion({
               <div className="flex items-center gap-3">
                 <ShieldCheck className="w-5 h-5 text-verified" />
                 <span className="font-medium text-lg">
-                  Claimed Data
+                  Additional Information provided by production location
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <button className="inline-flex items-center justify-center rounded-full p-0.5 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors ml-2"><Info className="w-4 h-4" /></button>
