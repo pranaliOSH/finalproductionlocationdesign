@@ -351,7 +351,7 @@ export default function FacilityPage() {
                   <DataField 
                     label="Name"
                     value={facilityData.name}
-                    explanation="The official name of this production location."
+                    explanation="The complete name of this production location."
                     contributor="Zaber and Zubair Fabrics Ltd"
                     contributedAt="November 12, 2022"
                     moreEntries={8}
