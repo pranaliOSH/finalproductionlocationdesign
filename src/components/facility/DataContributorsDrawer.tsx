@@ -75,9 +75,9 @@ export function DataContributorsDrawer({
             Why is this data source displayed first?
           </h4>
           <p className="text-xs text-muted-foreground leading-relaxed">
-            OS Hub prioritizes data from claimed production location owners and verified
-            sources. When multiple entries exist, we display the most recently verified data
-            from the highest-confidence source.
+            OS Hub prioritizes data in this order: (1) claimed facilities where owners/managers submitted data, (2) verified contributors' data, (3) most frequently submitted values, (4) oldest submissions. The OS Hub team actively moderates to promote quality data. To request reordering, email Support with the OS ID, preferred data entry, and justification.
+          
+
           </p>
         </div>
 
