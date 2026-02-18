@@ -546,7 +546,7 @@ export default function FacilityPage() {
                 <DataField 
                   label="Average Lead Time"
                   value={facilityData.averageLeadTime}
-                  explanation="The typical time from order placement to delivery."
+                  explanation="Typical time required from order confirmation to product delivery."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="medium"
