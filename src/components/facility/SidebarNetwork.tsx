@@ -156,7 +156,7 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
           <SheetHeader className="pb-4 border-b border-border">
             <SheetTitle className="flex items-center gap-2">
               <Users className="w-5 h-5 text-primary" />
-              All Contributors
+              All Data Sources
             </SheetTitle>
             <SheetDescription>
               {totalContributors} organizations have contributed data to this production location
