@@ -151,7 +151,7 @@ export function FacilityMap({
           <DataField 
             label="Address"
             value={address}
-            explanation="The physical street address of this production location."
+            explanation="The company address for this production location."
             contributor="Zaber and Zubair Fabrics Ltd"
             contributedAt="November 12, 2022"
             moreEntries={3}
