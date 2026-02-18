@@ -10,7 +10,7 @@ export function ActionsCard({ isClaimed }: ActionsCardProps) {
     <div className="rounded-lg border border-border p-3 space-y-2">
       <div className="mb-3">
         <h3 className="text-lg font-semibold text-foreground">Contribute to this profile</h3>
-        <p className="text-sm text-muted-foreground">Help improve supply chain transparency</p>
+        <p className="text-sm text-muted-foreground">Ways you can improve the data listed here</p>
       </div>
       
       <div className="flex flex-col gap-1.5">
@@ -31,6 +31,6 @@ export function ActionsCard({ isClaimed }: ActionsCardProps) {
           Report Closure
         </Button>
       </div>
-    </div>
-  );
+    </div>);
+
 }
