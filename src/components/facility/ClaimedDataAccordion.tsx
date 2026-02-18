@@ -7,12 +7,16 @@ import { Switch } from "@/components/ui/switch";
 interface ClaimedDataAccordionProps {
   children: ReactNode;
   explanation?: string;
+  learnMoreHref?: string;
+  learnMoreLabel?: string;
   subtitle?: string;
 }
 
 export function ClaimedDataAccordion({
   children,
   explanation = "Data provided by the production location management through the claim process.",
+  learnMoreHref = "https://info.opensupplyhub.org/resources/claim-a-facility",
+  learnMoreLabel = "Learn more",
   subtitle = "Verified information from the facility"
 }: ClaimedDataAccordionProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,8 +48,19 @@ export function ClaimedDataAccordion({
                     <TooltipTrigger asChild>
                       <button className="inline-flex items-center justify-center rounded-full p-0.5 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors ml-2"><Info className="w-4 h-4" /></button>
                     </TooltipTrigger>
-                    <TooltipContent side="top" className="max-w-xs">
-                      <p className="text-xs">{explanation}</p>
+                    <TooltipContent side="top" className="max-w-xs p-3 space-y-2 font-normal">
+                      <p className="text-sm text-popover-foreground">{explanation}</p>
+                      {learnMoreHref && (
+                        <a
+                          href={learnMoreHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          {learnMoreLabel} →
+                        </a>
+                      )}
                     </TooltipContent>
                   </Tooltip>
                 </span>
