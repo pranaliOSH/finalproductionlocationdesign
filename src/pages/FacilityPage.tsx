@@ -306,7 +306,7 @@ export default function FacilityPage() {
                   <ShieldCheck className="w-6 h-6 text-verified flex-shrink-0" />
                   <p className="text-lg font-semibold text-verified">CLAIMED PROFILE</p>
                   <InfoTooltip
-                    description="This profile has been claimed by the production location's owner, manager or by an authorized employee. Claimed data is displayed on the production location profile with the highest priority."
+                    description="This profile has been claimed by the production location's owner, manager or by an authorized employee, which allows you to see a larger suite of information submitted straight from the supplier."
                     learnMoreHref="https://info.opensupplyhub.org/resources/claim-a-facility"
                   />
                 </div>
