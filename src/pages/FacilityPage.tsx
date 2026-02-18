@@ -457,7 +457,7 @@ export default function FacilityPage() {
                       {facilityData.companyWebsite}
                     </a>
                   }
-                  explanation="The official website for this company."
+                  explanation="Official website URL for this specific production location."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
