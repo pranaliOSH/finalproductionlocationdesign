@@ -242,7 +242,7 @@ export function EnrichedDataPartnerships({
                   <span className="font-bold text-lg">
                     Living Wage
                     <InfoTooltip
-                    description="Living wage data helps assess whether workers earn enough to meet basic needs, supporting fair compensation practices across supply chains."
+                    description="Learn more about this data, how it's sourced, and how to use it."
                     learnMoreHref="https://info.opensupplyhub.org/resources/living-wage" />
 
                   </span>
