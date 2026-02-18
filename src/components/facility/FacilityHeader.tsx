@@ -111,7 +111,7 @@ export function FacilityHeader({
               <p className="text-base font-medium text-source-claimed">Claimed</p>
               <div className={`overflow-hidden transition-all duration-200 ${isDataSourcesOpen ? "max-h-24 opacity-100 mt-1" : "max-h-0 opacity-0"}`}>
                 <p className="text-sm text-muted-foreground">Data submitted by production location management</p>
-                <a href="https://info.opensupplyhub.org/resources/claimed-profiles" target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-medium text-primary hover:underline mt-1">Learn more →</a>
+                <a href="https://info.opensupplyhub.org/resources/claim-a-facility" target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-medium text-primary hover:underline mt-1">Learn more →</a>
               </div>
             </div>
           </div>
