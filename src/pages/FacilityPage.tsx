@@ -502,7 +502,7 @@ export default function FacilityPage() {
                 <DataField 
                   label="Description"
                   value={facilityData.productionLocationDescription}
-                  explanation="A description of this production location's capabilities and focus."
+                  explanation="A brief overview of what this production location manufactures and its main business activities."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
