@@ -77,7 +77,7 @@ interface Assessment {
         <div className="flex items-center gap-3 mb-2">
           <Handshake className="w-6 h-6 text-primary" />
           <h2 className="text-2xl font-semibold text-foreground">
-            Partner Data
+            Additional Information Provided by Third-parties
             <InfoTooltip
               description="Data provided by third-party integration partners who enrich facility profiles with additional verified information."
               learnMoreHref="https://info.opensupplyhub.org/data-integrations"
