@@ -169,7 +169,7 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
               <Info className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
               <div className="text-sm text-blue-900">
                 <p>
-                  Multiple organizations may contribute data about the same production location. Each contributor uploads data via a named list — use list names to understand the context and source of the data.
+                  Multiple organizations may have shared data for this production location. Sharing data often indicates a relationship between the organization (e.g., a brand) and the production location (e.g., a supplier). The list name may provide additional context about the relationship type and timeframe. Click on the organization name to learn more about them and the data they have shared.
                 </p>
                 <a
                   href="https://info.opensupplyhub.org/resources/an-open-data-model"
