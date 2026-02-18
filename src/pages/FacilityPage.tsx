@@ -500,7 +500,7 @@ export default function FacilityPage() {
                   tableRow={true}
                 />
                 <DataField 
-                  label="Production Location Description"
+                  label="Description"
                   value={facilityData.productionLocationDescription}
                   explanation="A description of this production location's capabilities and focus."
                   contributor="Zaber and Zubair Fabrics Ltd"
