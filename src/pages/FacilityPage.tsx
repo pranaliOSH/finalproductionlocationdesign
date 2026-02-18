@@ -406,7 +406,7 @@ export default function FacilityPage() {
                   <DataField 
                     label="Processing Type(s)"
                     value={facilityData.processingType}
-                    explanation="The stage of production this facility handles (e.g., raw materials, assembly, packaging)."
+                    explanation="The type of processing activities that take place at this location. For example: Printing, Tooling, Assembly."
                     contributor="JD Williams"
                     contributedAt="November 3, 2025"
                     moreEntries={44}
