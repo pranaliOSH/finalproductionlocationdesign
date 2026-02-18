@@ -519,7 +519,7 @@ export default function FacilityPage() {
                   tableRow={true}
                 />
                 <DataField 
-                  label="Membership"
+                  label="Affiliations"
                   value={
                     <div className="flex flex-col gap-1">
                       {facilityData.affiliations.map(affiliation => (
