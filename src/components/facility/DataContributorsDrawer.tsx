@@ -66,7 +66,7 @@ export function DataContributorsDrawer({
       {/* Promoted contribution */}
       <div className="mb-4">
         <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
-          Highlighted Data Point   
+          Highlighted Data Source   
         </h4>
 
         {/* Why this data is displayed */}
