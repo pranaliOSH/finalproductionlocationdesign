@@ -6,7 +6,7 @@ interface DataSectionProps {
   title: string;
   category: CategoryType;
   icon: ReactNode;
-  explanation?: string;
+  explanation?: ReactNode;
   subtitle?: string;
   whyItMatters?: string;
   children: ReactNode;
