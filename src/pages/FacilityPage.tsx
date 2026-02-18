@@ -344,7 +344,7 @@ export default function FacilityPage() {
                 title="General Information"
                 category="identity"
                 icon={<Building2 className="w-5 h-5" />}
-                explanation={<>Core identifying information about this production location. <a href="https://info.opensupplyhub.org/resources/understanding-production-location-data" target="_blank" rel="noopener noreferrer" className="font-medium underline hover:opacity-80">Learn more about each data point</a>.</>}
+                explanation={<>Core identifying information about this production location. <a href="https://info.opensupplyhub.org/resources/preparing-data" target="_blank" rel="noopener noreferrer" className="font-medium underline hover:opacity-80">Learn more about each data point</a>.</>}
                 
                 singleColumn={true}
               >
