@@ -145,7 +145,7 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
           onClick={() => setIsSheetOpen(true)}
           className="w-full py-2 text-sm text-primary hover:bg-primary/5 rounded-lg transition-colors font-medium">
 
-            View all {totalContributors} contributors
+            View all {totalContributors} data sources
           </button>
         }
       </div>
