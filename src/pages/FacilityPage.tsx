@@ -564,7 +564,7 @@ export default function FacilityPage() {
                 <DataField 
                   label="Estimated Annual Throughput"
                   value={facilityData.estimatedAnnualThroughput}
-                  explanation="The estimated annual production output of this production location."
+                  explanation="Total amount of materials or products processed by this location per year."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="medium"
