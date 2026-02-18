@@ -12,7 +12,7 @@ interface ClaimedDataAccordionProps {
 
 export function ClaimedDataAccordion({
   children,
-  explanation = "Data provided by the production location owner or manager through the claim process.",
+  explanation = "Data provided by the production location management through the claim process.",
   subtitle = "Verified information from the facility"
 }: ClaimedDataAccordionProps) {
   const [isOpen, setIsOpen] = useState(false);
