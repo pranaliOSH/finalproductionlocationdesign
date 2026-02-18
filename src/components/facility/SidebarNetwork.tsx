@@ -244,7 +244,7 @@ export function SidebarNetwork({ contributors, totalContributors, typeCounts }: 
           <div className="border-t border-border pt-4 pb-2">
               <div className="flex items-center gap-2 mb-4">
                 <Users className="w-5 h-5 text-foreground" />
-                <h3 className="text-lg font-bold text-foreground">Other Contributors</h3>
+                <h3 className="text-lg font-bold text-foreground">Anonymized Data Sources</h3>
               </div>
               <div className="divide-y divide-border">
                 {sortedTypeCounts.map(({ type, count }) =>
