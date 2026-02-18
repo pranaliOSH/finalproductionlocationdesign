@@ -442,7 +442,7 @@ export default function FacilityPage() {
             <div id="section-claimed-data">
               <ClaimedDataAccordion>
                 <DataField 
-                  label="Production Location Name in Native Language"
+                  label="Name in Native Language"
                   value={facilityData.nativeName}
                   explanation="The facility name in its local language."
                   contributor="Zaber and Zubair Fabrics Ltd"
