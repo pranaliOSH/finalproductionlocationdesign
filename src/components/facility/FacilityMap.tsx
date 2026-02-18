@@ -164,7 +164,7 @@ export function FacilityMap({
         <DataField 
           label="Coordinates"
           value={`${latitude.toFixed(6)}, ${longitude.toFixed(6)}`}
-          explanation="Geographic coordinates (latitude, longitude) of this production location."
+          explanation="The geographic coordinates (latitude, longitude) of this production location generated with Google geocoding API."
           contributor="OS Hub Data Team"
           contributedAt="April 7, 2025"
           moreEntries={122}
