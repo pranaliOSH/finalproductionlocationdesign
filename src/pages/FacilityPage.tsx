@@ -344,7 +344,7 @@ export default function FacilityPage() {
                 title="General Information"
                 category="identity"
                 icon={<Building2 className="w-5 h-5" />}
-                explanation="Core identifying information about this production location."
+                explanation="Core identifying information about this production location. Learn more about each data point."
                 
                 singleColumn={true}
               >
