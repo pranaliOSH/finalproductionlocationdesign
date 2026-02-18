@@ -65,7 +65,7 @@ export function FacilityMap({
           <span className="text-muted-foreground"><MapPin className="w-5 h-5" /></span>
           <div>
             <h3 className="section-title flex items-center gap-1">
-              Location Address
+              Geographic Information
               <InfoTooltip description="Physical address and geographic coordinates for this production location." />
             </h3>
             
