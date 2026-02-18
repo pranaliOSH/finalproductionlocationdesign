@@ -86,7 +86,7 @@ export function FacilityHeader({
           <div className="flex items-center gap-2">
             <h3 className="font-medium text-lg text-foreground">Understanding Data Sources</h3>
             <InfoTooltip
-            description="Open Supply Hub is an open data platform, where any organization who needs to share or search supply chain data can do so in a free and accessible tool. Data in OS Hub is uploaded by stakeholders across sectors and supply chains including brands and retailers, civil society, multi-stakeholder initiatives, certification schemes, factory groups and more."
+            description="Open Supply Hub is collaboratively mapping global supply chains. This model means that data comes into the platform in a few ways."
             learnMoreHref="https://info.opensupplyhub.org/resources/an-open-data-model" />
 
           </div>
