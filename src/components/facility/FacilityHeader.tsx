@@ -63,7 +63,7 @@ export function FacilityHeader({
              <span className="font-mono text-2xl font-bold text-foreground">{osId}</span>
             <InfoTooltip
             description="The OS ID is a free, unique identifier automatically assigned to each production location in OS Hub. Use it to track this location across systems, share it with partners, or reference it in compliance documentation."
-            learnMoreHref="https://info.opensupplyhub.org/resources/os-id" />
+            learnMoreHref="https://info.opensupplyhub.org/resources/a-free-universal-id-matching-algorithm" />
 
           </div>
           <div className="flex items-center gap-3">
