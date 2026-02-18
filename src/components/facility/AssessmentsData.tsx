@@ -263,7 +263,7 @@ export function AssessmentsData({ assessments, embedded = false }: AssessmentsDa
 
       <div className="mt-6 pt-4 border-t border-border bg-muted/50 -mx-4 px-4 py-3 rounded-md space-y-2">
         <p className="text-base text-muted-foreground">
-          <span className="font-bold text-primary">Disclaimer:</span> Assessment data is provided by third parties and may not reflect current conditions. Always verify critical information independently.
+          <span className="font-bold text-primary">Disclaimer:</span> Datasets listed here are only inclusive of organizations who have opted into sharing certain additional information on Open Supply Hub at this time. This should not be interpreted as a complete picture of all the datasets available for this location in this category, nor is it an endorsement by Open Supply Hub of one organization over another. It is the intention to continue to expand these offerings to showcase the many different models, platforms, and tools available for any given data point or issue area.
         </p>
       </div>
     </>
