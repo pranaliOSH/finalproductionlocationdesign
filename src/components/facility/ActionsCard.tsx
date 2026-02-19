@@ -28,7 +28,7 @@ export function ActionsCard({ isClaimed }: ActionsCardProps) {
         </Button>
         <Button size="sm" variant="ghost" className="gap-2 h-9 justify-start text-base">
           <XCircle className="w-4 h-4" />
-          Report Closure
+          Report Closure / Move
         </Button>
       </div>
     </div>);
