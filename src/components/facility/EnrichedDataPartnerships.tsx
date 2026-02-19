@@ -157,7 +157,7 @@ export function EnrichedDataPartnerships({
                   Certifications
                   <InfoTooltip
                     description="Learn more about this data, how it is sourced, and how to use it."
-                    learnMoreHref="https://info.opensupplyhub.org/resources/certifications" />
+                    learnMoreHref="https://info.opensupplyhub.org/certifications" />
 
                 </span>
               </div>
