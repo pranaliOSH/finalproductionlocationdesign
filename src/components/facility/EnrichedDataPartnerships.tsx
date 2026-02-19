@@ -114,7 +114,7 @@ export function EnrichedDataPartnerships({
 
                   <InfoTooltip
                     description="Learn more about this data, how it is sourced, and how to use it."
-                    learnMoreHref="https://info.opensupplyhub.org/resources/assessments" />
+                    learnMoreHref="https://info.opensupplyhub.org/assessment-and-audits" />
 
                 </span>
               </div>
