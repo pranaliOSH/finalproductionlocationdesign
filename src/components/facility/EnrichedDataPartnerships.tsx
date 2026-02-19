@@ -200,7 +200,7 @@ export function EnrichedDataPartnerships({
 
                   <InfoTooltip
                     description="Learn more about this data, how it is sourced, and how to use it."
-                    learnMoreHref="https://info.opensupplyhub.org/resources/emissions" />
+                    learnMoreHref="https://info.opensupplyhub.org/emissions-and-energy-use" />
 
                 </span>
               </div>
