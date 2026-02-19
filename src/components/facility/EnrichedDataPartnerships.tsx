@@ -243,7 +243,7 @@ export function EnrichedDataPartnerships({
                     Living Wage
                     <InfoTooltip
                     description="Learn more about this data, how it is sourced, and how to use it."
-                    learnMoreHref="https://info.opensupplyhub.org/resources/living-wage" />
+                    learnMoreHref="https://info.opensupplyhub.org/living-wage" />
 
                   </span>
                </div>
