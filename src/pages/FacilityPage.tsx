@@ -49,28 +49,28 @@ const facilityData = {
   actualAnnualEnergyConsumption: "8,450,000 kWh/year",
   companyPhone: "+880 2 8431 5678",
   companyWebsite: "https://www.nomangroup.com",
-  productionLocationDescription: "Vertically integrated textile manufacturing facility specializing in woven and knit fabrics for home textiles and apparel. Features in-house dyeing, printing, and finishing capabilities.",
+  productionLocationDescription: "Vertically integrated textile manufacturing facility specializing in woven and knit fabrics for home textiles and apparel. Features in-house dyeing, printing, and finishing capabilities."
 };
 
 const contributors = [
-  { name: "Sainsbury's", type: "brand" as const, dataPoints: 22, lastContributed: "Nov 2025", listUploads: [
-    { listTitle: "Sainsbury's Global Suppliers 2025", dateContributed: "Nov 12, 2025" },
-    { listTitle: "Sainsbury's Global Suppliers 2024", dateContributed: "Nov 8, 2024" },
-    { listTitle: "Sainsbury's Global Suppliers 2023", dateContributed: "Nov 15, 2023" },
-  ]},
-  { name: "JD Williams and Company Ltd", type: "brand" as const, dataPoints: 18, lastContributed: "Nov 2025", listUploads: [{ listTitle: "JD Williams Factory List", dateContributed: "Nov 4, 2025" }] },
-  { name: "International Accord Foundation", type: "cso" as const, dataPoints: 18, lastContributed: "Oct 2025", listUploads: [{ listTitle: "Accord Signatory Factory List", dateContributed: "Oct 8, 2025" }] },
-  { name: "Marks & Spencer", type: "brand" as const, dataPoints: 28, lastContributed: "Nov 2025", listUploads: [
-    { listTitle: "M&S Supplier Network 2025", dateContributed: "Nov 5, 2025" },
-    { listTitle: "M&S Supplier Network 2024", dateContributed: "Nov 10, 2024" },
-    { listTitle: "M&S Supplier Network 2023", dateContributed: "Nov 3, 2023" },
-  ]},
-  { name: "H&M Group", type: "brand" as const, dataPoints: 35, lastContributed: "Aug 2025", listUploads: [{ listTitle: "H&M Supplier Disclosure 2025", dateContributed: "Aug 20, 2025" }] },
-  { name: "SLCP", type: "auditor" as const, dataPoints: 45, lastContributed: "Apr 2025", listUploads: [{ listTitle: "SLCP Verified Facilities Q1 2025", dateContributed: "Apr 15, 2025" }] },
-  { name: "Worldly", type: "msi" as const, dataPoints: 30, lastContributed: "Mar 2025", listUploads: [{ listTitle: "Higg FEM Verified Facilities", dateContributed: "Mar 15, 2025" }] },
-  { name: "OS Hub", type: "other" as const, dataPoints: 12, lastContributed: "Aug 2025" },
-  { name: "Zaber and Zubair Fabrics Ltd", type: "supplier" as const, dataPoints: 35, lastContributed: "Nov 2022" },
-];
+{ name: "Sainsbury's", type: "brand" as const, dataPoints: 22, lastContributed: "Nov 2025", listUploads: [
+  { listTitle: "Sainsbury's Global Suppliers 2025", dateContributed: "Nov 12, 2025" },
+  { listTitle: "Sainsbury's Global Suppliers 2024", dateContributed: "Nov 8, 2024" },
+  { listTitle: "Sainsbury's Global Suppliers 2023", dateContributed: "Nov 15, 2023" }]
+},
+{ name: "JD Williams and Company Ltd", type: "brand" as const, dataPoints: 18, lastContributed: "Nov 2025", listUploads: [{ listTitle: "JD Williams Factory List", dateContributed: "Nov 4, 2025" }] },
+{ name: "International Accord Foundation", type: "cso" as const, dataPoints: 18, lastContributed: "Oct 2025", listUploads: [{ listTitle: "Accord Signatory Factory List", dateContributed: "Oct 8, 2025" }] },
+{ name: "Marks & Spencer", type: "brand" as const, dataPoints: 28, lastContributed: "Nov 2025", listUploads: [
+  { listTitle: "M&S Supplier Network 2025", dateContributed: "Nov 5, 2025" },
+  { listTitle: "M&S Supplier Network 2024", dateContributed: "Nov 10, 2024" },
+  { listTitle: "M&S Supplier Network 2023", dateContributed: "Nov 3, 2023" }]
+},
+{ name: "H&M Group", type: "brand" as const, dataPoints: 35, lastContributed: "Aug 2025", listUploads: [{ listTitle: "H&M Supplier Disclosure 2025", dateContributed: "Aug 20, 2025" }] },
+{ name: "SLCP", type: "auditor" as const, dataPoints: 45, lastContributed: "Apr 2025", listUploads: [{ listTitle: "SLCP Verified Facilities Q1 2025", dateContributed: "Apr 15, 2025" }] },
+{ name: "Worldly", type: "msi" as const, dataPoints: 30, lastContributed: "Mar 2025", listUploads: [{ listTitle: "Higg FEM Verified Facilities", dateContributed: "Mar 15, 2025" }] },
+{ name: "OS Hub", type: "other" as const, dataPoints: 12, lastContributed: "Aug 2025" },
+{ name: "Zaber and Zubair Fabrics Ltd", type: "supplier" as const, dataPoints: 35, lastContributed: "Nov 2022" }];
+
 
 const totalContributors = 44;
 
@@ -80,139 +80,139 @@ const contributorTypeCounts = {
   cso: 6,
   supplier: 9,
   msi: 2,
-  other: 1,
+  other: 1
 };
 
 const certifications = [
-  { 
-    name: "CERT/01-00-1234", 
-    issuer: "Placeholder Certification Body",
-    issuerOrg: "Placeholder Certification Body",
-    issuerOrgUrl: "https://example.com/",
-    issuerUrl: "https://example.com/certification",
-    validUntil: "Dec 2025",
-    scope: "Certification",
-    contributor: "Placeholder Provider",
-    contributorUrl: "https://example.com/",
-    contributedAt: "January 8, 2026",
-  },
-];
+{
+  name: "CERT/01-00-1234",
+  issuer: "Placeholder Certification Body",
+  issuerOrg: "Placeholder Certification Body",
+  issuerOrgUrl: "https://example.com/",
+  issuerUrl: "https://example.com/certification",
+  validUntil: "Dec 2025",
+  scope: "Certification",
+  contributor: "Placeholder Provider",
+  contributorUrl: "https://example.com/",
+  contributedAt: "January 8, 2026"
+}];
+
 
 const environmentalMetrics = [
-  {
-    name: "Estimated Annual Emissions",
-    value: "32833",
-    unit: "t CO₂e-100",
-    source: "2025 Emissions Model",
-    sourceUrl: "https://climatetrace.org/emissions-model",
-    provider: "Climate TRACE",
-    providerUrl: "https://climatetrace.org",
-    contributor: "Climate TRACE",
-    contributorUrl: "https://climatetrace.org",
-    contributedAt: "November 10, 2025",
-  },
-  {
-    name: "Estimated Annual Activity",
-    value: "450000",
-    unit: "MWh",
-    source: "2025 Emissions Model",
-    sourceUrl: "https://climatetrace.org/emissions-model",
-    provider: "Climate TRACE",
-    providerUrl: "https://climatetrace.org",
-    contributor: "Climate TRACE",
-    contributorUrl: "https://climatetrace.org",
-    contributedAt: "November 10, 2025",
-  },
-];
+{
+  name: "Estimated Annual Emissions",
+  value: "32833",
+  unit: "t CO₂e-100",
+  source: "2025 Emissions Model",
+  sourceUrl: "https://climatetrace.org/emissions-model",
+  provider: "Climate TRACE",
+  providerUrl: "https://climatetrace.org",
+  contributor: "Climate TRACE",
+  contributorUrl: "https://climatetrace.org",
+  contributedAt: "November 10, 2025"
+},
+{
+  name: "Estimated Annual Activity",
+  value: "450000",
+  unit: "MWh",
+  source: "2025 Emissions Model",
+  sourceUrl: "https://climatetrace.org/emissions-model",
+  provider: "Climate TRACE",
+  providerUrl: "https://climatetrace.org",
+  contributor: "Climate TRACE",
+  contributorUrl: "https://climatetrace.org",
+  contributedAt: "November 10, 2025"
+}];
+
 
 const workforceMetrics = [
-  {
-    name: "Grievance Mechanism",
-    value: "Active",
-    description: "Workers have access to anonymous grievance reporting",
-    status: "good" as const,
-    source: "Ulula",
-    updatedAt: "Nov 2025"
-  },
-];
+{
+  name: "Grievance Mechanism",
+  value: "Active",
+  description: "Workers have access to anonymous grievance reporting",
+  status: "good" as const,
+  source: "Ulula",
+  updatedAt: "Nov 2025"
+}];
+
 
 const assessments = [
-  // Left column - Worldly
-  {
-    name: "FEM Assessment",
-    provider: "Worldly",
-    providerUrl: "https://worldly.io/",
-    scope: "Environmental",
-    verificationStatus: "Verified",
-    lastDate: "January 15, 2025",
-    reportingYear: "2024",
-    assessmentUrl: "https://worldly.io/fem",
-    link: "#",
-    groupTitle: "Worldly Assessment",
-  },
-  {
-    groupContribution: "Worldly Assessment",
-    contributor: "Worldly",
-    contributorUrl: "https://worldly.io/",
-    contributedAt: "March 20, 2025",
-  },
-  // Left column - SLCP
-  {
-    name: "CAF Assessment",
-    provider: "SLCP",
-    providerUrl: "https://slconvergence.org/",
-    scope: "Social & Labor",
-    status: "Verified",
-    assessmentDate: "April 2025",
-    assessmentPlatform: "SLCP Gateway",
-    verifierBody: "Bureau Veritas",
-    link: "#",
-    groupTitle: "SLCP Assessment",
-  },
-  {
-    groupContribution: "SLCP Assessment",
-    contributor: "SLCP",
-    contributorUrl: "https://slconvergence.org/",
-    contributedAt: "April 15, 2025",
-  },
-  // Right column - amfori
-  {
-    name: "amfori BEPI Audit",
-    provider: "amfori",
-    providerUrl: "https://www.amfori.org/",
-    scope: "Environmental",
-    submissionDate: "October 28, 2023",
-    expirationDate: "October 28, 2025",
-    link: "#",
-    groupTitle: "amfori Statuses",
-  },
-  {
-    name: "amfori BSCI Audit",
-    provider: "amfori",
-    providerUrl: "https://www.amfori.org/",
-    scope: "Social & Labor",
-    submissionDate: "October 28, 2023",
-    expirationDate: "October 28, 2025",
-    link: "#",
-    groupTitle: "amfori Statuses",
-  },
-  {
-    name: "amfori Environmental Risk Assessment",
-    provider: "amfori",
-    providerUrl: "https://www.amfori.org/",
-    scope: "Environmental",
-    expirationDate: "October 28, 2027",
-    completionDate: "October 28, 2025",
-    link: "#",
-    groupTitle: "amfori Statuses",
-  },
-  {
-    groupContribution: "amfori Statuses",
-    contributor: "amfori",
-    contributorUrl: "https://www.amfori.org/",
-    contributedAt: "October 28, 2023",
-  },
-];
+// Left column - Worldly
+{
+  name: "FEM Assessment",
+  provider: "Worldly",
+  providerUrl: "https://worldly.io/",
+  scope: "Environmental",
+  verificationStatus: "Verified",
+  lastDate: "January 15, 2025",
+  reportingYear: "2024",
+  assessmentUrl: "https://worldly.io/fem",
+  link: "#",
+  groupTitle: "Worldly Assessment"
+},
+{
+  groupContribution: "Worldly Assessment",
+  contributor: "Worldly",
+  contributorUrl: "https://worldly.io/",
+  contributedAt: "March 20, 2025"
+},
+// Left column - SLCP
+{
+  name: "CAF Assessment",
+  provider: "SLCP",
+  providerUrl: "https://slconvergence.org/",
+  scope: "Social & Labor",
+  status: "Verified",
+  assessmentDate: "April 2025",
+  assessmentPlatform: "SLCP Gateway",
+  verifierBody: "Bureau Veritas",
+  link: "#",
+  groupTitle: "SLCP Assessment"
+},
+{
+  groupContribution: "SLCP Assessment",
+  contributor: "SLCP",
+  contributorUrl: "https://slconvergence.org/",
+  contributedAt: "April 15, 2025"
+},
+// Right column - amfori
+{
+  name: "amfori BEPI Audit",
+  provider: "amfori",
+  providerUrl: "https://www.amfori.org/",
+  scope: "Environmental",
+  submissionDate: "October 28, 2023",
+  expirationDate: "October 28, 2025",
+  link: "#",
+  groupTitle: "amfori Statuses"
+},
+{
+  name: "amfori BSCI Audit",
+  provider: "amfori",
+  providerUrl: "https://www.amfori.org/",
+  scope: "Social & Labor",
+  submissionDate: "October 28, 2023",
+  expirationDate: "October 28, 2025",
+  link: "#",
+  groupTitle: "amfori Statuses"
+},
+{
+  name: "amfori Environmental Risk Assessment",
+  provider: "amfori",
+  providerUrl: "https://www.amfori.org/",
+  scope: "Environmental",
+  expirationDate: "October 28, 2027",
+  completionDate: "October 28, 2025",
+  link: "#",
+  groupTitle: "amfori Statuses"
+},
+{
+  groupContribution: "amfori Statuses",
+  contributor: "amfori",
+  contributorUrl: "https://www.amfori.org/",
+  contributedAt: "October 28, 2023"
+}];
+
 
 export default function FacilityPage() {
   const [activeSection, setActiveSection] = useState("overview");
@@ -225,11 +225,11 @@ export default function FacilityPage() {
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-4">
               <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-                <img 
-                  src={openSupplyHubLogo} 
-                  alt="Open Supply Hub" 
-                  className="h-8 w-auto"
-                />
+                <img
+                  src={openSupplyHubLogo}
+                  alt="Open Supply Hub"
+                  className="h-8 w-auto" />
+
               </Link>
             </div>
 
@@ -268,23 +268,23 @@ export default function FacilityPage() {
           {/* Sidebar navigation */}
           <div className="hidden lg:block">
             <div className="sticky top-16 space-y-6">
-              <Link 
-                to="/" 
-                className="inline-flex items-center gap-1 text-sm text-primary hover:underline"
-              >
+              <Link
+                to="/"
+                className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
+
                 <ArrowLeft className="w-4 h-4" />
                 Back to search results
               </Link>
-              <PageNavigation 
-                activeSection={activeSection} 
-                onSectionChange={setActiveSection} 
-              />
+              <PageNavigation
+                activeSection={activeSection}
+                onSectionChange={setActiveSection} />
+
               <ActionsCard isClaimed={facilityData.isClaimed} />
-              <SidebarNetwork 
+              <SidebarNetwork
                 contributors={contributors}
                 totalContributors={totalContributors}
-                typeCounts={contributorTypeCounts}
-              />
+                typeCounts={contributorTypeCounts} />
+
             </div>
           </div>
 
@@ -292,39 +292,39 @@ export default function FacilityPage() {
           <div className="space-y-6 min-w-0">
             {/* Page title */}
             <div className="mb-2">
-              <Link 
-                to="/" 
-                className="inline-flex items-center gap-1 text-sm text-primary hover:underline mb-4 lg:hidden"
-              >
+              <Link
+                to="/"
+                className="inline-flex items-center gap-1 text-sm text-primary hover:underline mb-4 lg:hidden">
+
                 <ArrowLeft className="w-4 h-4" />
                 Back to search results
               </Link>
-              <p className="text-base text-muted-foreground mb-1">Production Location</p>
+              <p className="text-base text-muted-foreground mb-1">Location Name</p>
                 <h1 className="text-4xl lg:text-5xl font-semibold text-foreground">{facilityData.name}</h1>
-              {facilityData.isClaimed && (
-                <div className="flex items-center gap-2 mt-3">
+              {facilityData.isClaimed &&
+              <div className="flex items-center gap-2 mt-3">
                   <ShieldCheck className="w-6 h-6 text-verified flex-shrink-0" />
                   <p className="text-lg font-semibold text-verified">CLAIMED PROFILE</p>
                   <InfoTooltip
-                    description="This profile has been claimed by the production location's owner, manager or by an authorized employee, which allows you to see a larger suite of information provided directly by the production location."
-                    learnMoreHref="https://info.opensupplyhub.org/resources/claim-a-facility"
-                  />
+                  description="This profile has been claimed by the production location's owner, manager or by an authorized employee, which allows you to see a larger suite of information provided directly by the production location."
+                  learnMoreHref="https://info.opensupplyhub.org/resources/claim-a-facility" />
+
                 </div>
-              )}
-              {facilityData.isClaimed && (
-                <p className="text-base text-muted-foreground mt-1 lg:pl-9">
+              }
+              {facilityData.isClaimed &&
+              <p className="text-base text-muted-foreground mt-1 lg:pl-9">
                   Claimed by <span className="font-medium text-foreground">{facilityData.claimedBy || "the owner"}</span>
-                  {facilityData.claimedDate && (
-                    <> on <span className="font-medium text-foreground">{facilityData.claimedDate}</span></>
-                  )}
+                  {facilityData.claimedDate &&
+                <> on <span className="font-medium text-foreground">{facilityData.claimedDate}</span></>
+                }
                 </p>
-              )}
+              }
             </div>
 
             {/* Header section */}
             {/* Header section */}
             <div id="section-overview">
-              <FacilityHeader 
+              <FacilityHeader
                 osId={facilityData.osId}
                 isClaimed={facilityData.isClaimed}
                 claimedBy={facilityData.claimedBy}
@@ -333,8 +333,8 @@ export default function FacilityPage() {
                 country={facilityData.country}
                 sourceCount={totalContributors}
                 lastUpdated={facilityData.lastUpdated}
-                confidenceLevel={4}
-              />
+                confidenceLevel={4} />
+
             </div>
 
 
@@ -345,115 +345,115 @@ export default function FacilityPage() {
                 category="identity"
                 icon={<Building2 className="w-5 h-5" />}
                 explanation={<>Core identifying information about this production location. <a href="https://info.opensupplyhub.org/resources/preparing-data" target="_blank" rel="noopener noreferrer" className="font-medium underline hover:opacity-80">Learn more about each data point</a>.</>}
-                
-                singleColumn={true}
-              >
-                  <DataField 
-                    label="Name"
-                    value={facilityData.name}
-                    explanation="The complete name of this production location."
-                    contributor="Zaber and Zubair Fabrics Ltd"
-                    contributedAt="November 12, 2022"
-                    moreEntries={8}
-                    confidenceLevel="high"
-                    tableRow={true}
-                    twoLineProvenance={true}
-                  />
-                  <DataField 
-                    label="Parent Company"
-                    value={facilityData.parentCompany}
-                    explanation="The company or group that holds majority ownership for this production location."
-                    contributor="Zaber and Zubair Fabrics Ltd"
-                    contributedAt="November 12, 2022"
-                    moreEntries={6}
-                    confidenceLevel="high"
-                    tableRow={true}
-                    twoLineProvenance={true}
-                  />
-                  <DataField 
-                    label="Industry / Sectors"
-                    value={facilityData.sector}
-                    explanation="The sector(s) that this location operates in. For example: Apparel, Electronics, Renewable Energy."
-                    contributor="Sainsbury's"
-                    contributedAt="November 3, 2025"
-                    moreEntries={51}
-                    confidenceLevel="high"
-                    tableRow={true}
-                    twoLineProvenance={true}
-                  />
-                  <DataField 
-                    label="Product Type(s)"
-                    value={facilityData.facilityType.join(", ")}
-                    explanation="The type of products produced at this location. For example: Shirts, Laptops, Solar Panels."
-                    contributor="OS Hub Research Team"
-                    contributedAt="August 19, 2025"
-                    moreEntries={5}
-                    confidenceLevel="medium"
-                    tableRow={true}
-                    twoLineProvenance={true}
-                  />
-                  <DataField 
-                    label="Location Type(s)"
-                    value={facilityData.locationType.join(", ")}
-                    explanation="The type of location. For example: Final Product Assembly, Raw Materials Production or Processing."
-                    contributor="Zaber and Zubair Fabrics Ltd"
-                    contributedAt="November 12, 2022"
-                    moreEntries={3}
-                    confidenceLevel="high"
-                    tableRow={true}
-                    twoLineProvenance={true}
-                  />
-                  <DataField 
-                    label="Processing Type(s)"
-                    value={facilityData.processingType}
-                    explanation="The type of processing activities that take place at this location. For example: Printing, Tooling, Assembly."
-                    contributor="JD Williams"
-                    contributedAt="November 3, 2025"
-                    moreEntries={44}
-                    confidenceLevel="high"
-                    tableRow={true}
-                    twoLineProvenance={true}
-                  />
-                  <DataField 
-                    label="Number of Workers"
-                    value={facilityData.workerCount.toLocaleString()}
-                    explanation="The number or range of people employed at this location. For example: 100, 100-150."
-                    contributor="Marks & Spencer"
-                    contributedAt="September 8, 2025"
-                    moreEntries={12}
-                    confidenceLevel="high"
-                    tableRow={true}
-                    twoLineProvenance={true}
-                  />
+
+                singleColumn={true}>
+
+                  <DataField
+                  label="Name"
+                  value={facilityData.name}
+                  explanation="The complete name of this production location."
+                  contributor="Zaber and Zubair Fabrics Ltd"
+                  contributedAt="November 12, 2022"
+                  moreEntries={8}
+                  confidenceLevel="high"
+                  tableRow={true}
+                  twoLineProvenance={true} />
+
+                  <DataField
+                  label="Parent Company"
+                  value={facilityData.parentCompany}
+                  explanation="The company or group that holds majority ownership for this production location."
+                  contributor="Zaber and Zubair Fabrics Ltd"
+                  contributedAt="November 12, 2022"
+                  moreEntries={6}
+                  confidenceLevel="high"
+                  tableRow={true}
+                  twoLineProvenance={true} />
+
+                  <DataField
+                  label="Industry / Sectors"
+                  value={facilityData.sector}
+                  explanation="The sector(s) that this location operates in. For example: Apparel, Electronics, Renewable Energy."
+                  contributor="Sainsbury's"
+                  contributedAt="November 3, 2025"
+                  moreEntries={51}
+                  confidenceLevel="high"
+                  tableRow={true}
+                  twoLineProvenance={true} />
+
+                  <DataField
+                  label="Product Type(s)"
+                  value={facilityData.facilityType.join(", ")}
+                  explanation="The type of products produced at this location. For example: Shirts, Laptops, Solar Panels."
+                  contributor="OS Hub Research Team"
+                  contributedAt="August 19, 2025"
+                  moreEntries={5}
+                  confidenceLevel="medium"
+                  tableRow={true}
+                  twoLineProvenance={true} />
+
+                  <DataField
+                  label="Location Type(s)"
+                  value={facilityData.locationType.join(", ")}
+                  explanation="The type of location. For example: Final Product Assembly, Raw Materials Production or Processing."
+                  contributor="Zaber and Zubair Fabrics Ltd"
+                  contributedAt="November 12, 2022"
+                  moreEntries={3}
+                  confidenceLevel="high"
+                  tableRow={true}
+                  twoLineProvenance={true} />
+
+                  <DataField
+                  label="Processing Type(s)"
+                  value={facilityData.processingType}
+                  explanation="The type of processing activities that take place at this location. For example: Printing, Tooling, Assembly."
+                  contributor="JD Williams"
+                  contributedAt="November 3, 2025"
+                  moreEntries={44}
+                  confidenceLevel="high"
+                  tableRow={true}
+                  twoLineProvenance={true} />
+
+                  <DataField
+                  label="Number of Workers"
+                  value={facilityData.workerCount.toLocaleString()}
+                  explanation="The number or range of people employed at this location. For example: 100, 100-150."
+                  contributor="Marks & Spencer"
+                  contributedAt="September 8, 2025"
+                  moreEntries={12}
+                  confidenceLevel="high"
+                  tableRow={true}
+                  twoLineProvenance={true} />
+
               </DataSection>
 
               <div>
-                <FacilityMap 
+                <FacilityMap
                   latitude={facilityData.latitude}
                   longitude={facilityData.longitude}
                   contributorCount={122}
                   lastVerified="April 7, 2025"
-                  address={facilityData.address}
-                />
+                  address={facilityData.address} />
+
               </div>
             </div>
 
             {/* Claimed / Facility-Provided Data section with accordion toggle */}
             <div id="section-claimed-data">
               <ClaimedDataAccordion>
-                <DataField 
+                <DataField
                   label="Name in Native Language"
                   value={facilityData.nativeName}
                   explanation="The production location name in the local language if different from the English name."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Company Website"
                   value={
-                    <a href={facilityData.companyWebsite} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  <a href={facilityData.companyWebsite} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                       {facilityData.companyWebsite}
                     </a>
                   }
@@ -461,124 +461,124 @@ export default function FacilityPage() {
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Company Phone"
                   value={facilityData.companyPhone}
                   explanation="Main phone number for contacting this production location directly."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Office Name"
                   value={facilityData.officeName}
                   explanation="Name of the corporate office or headquarters."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Office Address"
                   value={facilityData.officeAddress}
                   explanation="Physical address of the office location."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Office Country"
                   value={facilityData.officeCountry}
                   explanation="The country where the corporate office or headquarter is located."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Description"
                   value={facilityData.productionLocationDescription}
                   explanation="A brief overview of what this production location manufactures and its main business activities."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Certifications / Standards / Regulations"
                   value={facilityData.description}
                   explanation="Certifications and standards the production location self-reports as adhering to. OS Hub does not verify this information."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="January 15, 2025"
                   confidenceLevel="low"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Affiliations"
                   value={
-                    <div className="flex flex-col gap-1">
-                      {facilityData.affiliations.map(affiliation => (
-                        <span key={affiliation}>
+                  <div className="flex flex-col gap-1">
+                      {facilityData.affiliations.map((affiliation) =>
+                    <span key={affiliation}>
                           {affiliation}
                         </span>
-                      ))}
+                    )}
                     </div>
                   }
                   explanation="Industry associations and partner entities as declared by the production location. OS Hub does not independently verify this information."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Minimum Order Quantity"
                   value={facilityData.minimumOrderQuantity}
                   explanation="Smallest order quantity this production location will accept from customers."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="medium"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Average Lead Time"
                   value={facilityData.averageLeadTime}
                   explanation="Typical time required from order confirmation to product delivery."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="medium"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Percentage of Female Workers"
                   value={`${facilityData.percentageFemaleWorkers}%`}
                   explanation="Percentage of female employees out of the total workforce at this location."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Estimated Annual Throughput"
                   value={facilityData.estimatedAnnualThroughput}
                   explanation="Total amount of materials or products processed by this location per year."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="medium"
-                  tableRow={true}
-                />
-                <DataField 
+                  tableRow={true} />
+
+                <DataField
                   label="Actual Annual Energy Consumption"
                   value={facilityData.actualAnnualEnergyConsumption}
                   explanation="Annual energy consumption by source reported by this production location."
                   contributor="Zaber and Zubair Fabrics Ltd"
                   contributedAt="November 12, 2022"
                   confidenceLevel="high"
-                  tableRow={true}
-                />
+                  tableRow={true} />
+
               </ClaimedDataAccordion>
             </div>
 
@@ -586,10 +586,10 @@ export default function FacilityPage() {
             {/* Enriched Data Partnerships - Tabbed section */}
             <div id="section-assessments">
             <EnrichedDataPartnerships
-              certifications={certifications}
-              assessments={assessments}
-              environmentalMetrics={environmentalMetrics}
-            />
+                certifications={certifications}
+                assessments={assessments}
+                environmentalMetrics={environmentalMetrics} />
+
             </div>
 
           </div>
@@ -610,6 +610,6 @@ export default function FacilityPage() {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>);
+
 }
