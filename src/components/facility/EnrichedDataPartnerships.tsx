@@ -76,7 +76,7 @@ export function EnrichedDataPartnerships({
       <div className="border-t-2 border-primary pt-6">
         <div className="flex items-center gap-3 mb-2">
           <Handshake className="w-6 h-6 text-primary" />
-          <h2 className="text-2xl font-semibold text-foreground">Partner Datasets
+          <h2 className="text-2xl font-semibold text-foreground">Additional Information Provided by Partners
 
             <InfoTooltip
               description="Data provided by third-party partners who host additional social or environmental data related to this production location, its context, and/or its operations."
@@ -86,7 +86,7 @@ export function EnrichedDataPartnerships({
 
           </h2>
         </div>
-        <p className="text-base text-muted-foreground">Have information you'd like to share here? Want to pull a report from these datasets? <a href="https://info.opensupplyhub.org/data-integrations" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Learn More.</a> Need programmatic access? <a href="https://info.opensupplyhub.org/api" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Explore our API</a> to pull reports from these datasets.
+        <p className="text-base text-muted-foreground">Have information you'd like to share here? Want to pull a report from these datasets? Learn More. Need programmatic access? Explore our API to pull reports from these datasets.<a href="https://info.opensupplyhub.org/data-integrations" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Learn More.</a> Need programmatic access? <a href="https://info.opensupplyhub.org/api" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Explore our API</a> to pull reports from these datasets.
         </p>
       </div>
 
