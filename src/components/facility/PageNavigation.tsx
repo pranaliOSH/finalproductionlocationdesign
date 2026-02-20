@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Building2, MapPin, ClipboardCheck, Award, Leaf, Wallet, ShieldAlert, ChevronDown } from "lucide-react";
+import { Building2, MapPin, ClipboardCheck, Leaf, Wallet, ShieldAlert, ChevronDown } from "lucide-react";
 
 interface PageNavigationProps {
   activeSection: string;
@@ -12,7 +12,7 @@ const sections = [
   { id: "claimed-data", label: "Operational Details", icon: <Building2 className="w-4 h-4" /> },
    
    { id: "assessments", label: "Assessments & Audits", icon: <ClipboardCheck className="w-4 h-4" /> },
-   { id: "certifications", label: "Certifications", icon: <Award className="w-4 h-4" /> },
+   
    { id: "environment", label: "Emissions & Energy Use", icon: <Leaf className="w-4 h-4" /> },
    { id: "living-wage", label: "Living Wage", icon: <Wallet className="w-4 h-4" /> },
    { id: "grievance-mechanism", label: "Grievance Mechanisms", icon: <ShieldAlert className="w-4 h-4" /> },
