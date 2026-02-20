@@ -78,8 +78,8 @@ export function EnrichedDataPartnerships({
           <Handshake className="w-6 h-6 text-primary" />
           <h2 className="text-2xl font-semibold text-foreground">Partner Data
 
-            <InfoTooltip
-              description="Data provided by third-party partners who host additional social or environmental data related to this production location, its context, and/or its operations."
+          <InfoTooltip
+              description="Are you a data provider and want your data listed here? Want to access this data for compliance reporting, risk analysis, or supplier monitoring?"
               learnMoreHref="https://info.opensupplyhub.org/data-integrations"
               learnMoreLabel="Learn more"
               className="ml-2" />
