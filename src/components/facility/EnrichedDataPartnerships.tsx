@@ -86,10 +86,7 @@ export function EnrichedDataPartnerships({
 
           </h2>
         </div>
-        <p className="text-base text-muted-foreground">The following information is provided by third-party partners who host additional social or environmental data related to this production location, its context, and/or its operations.
-
-          <a href="https://info.opensupplyhub.org/data-integrations" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Learn More.</a> Need programmatic access? <a href="https://info.opensupplyhub.org/api" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Explore our API</a> to pull reports from these datasets.
-        </p>
+        <p className="text-base text-muted-foreground">The following information is provided by third-party partners who host additional social or environmental data related to this production location, its context, and/or its operations.</p>
       </div>
 
       {/* Accordion Sections */}
