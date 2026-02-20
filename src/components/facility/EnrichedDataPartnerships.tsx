@@ -76,7 +76,7 @@ export function EnrichedDataPartnerships({
       <div className="border-t-2 border-primary pt-6">
         <div className="flex items-center gap-3 mb-2">
           <Handshake className="w-6 h-6 text-primary" />
-          <h2 className="text-2xl font-semibold text-foreground">Additional Information Provided by Partners
+          <h2 className="text-2xl font-semibold text-foreground">Partner Datasets
 
             <InfoTooltip
               description="Data provided by third-party partners who host additional social or environmental data related to this production location, its context, and/or its operations."
