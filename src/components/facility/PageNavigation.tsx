@@ -9,7 +9,7 @@ interface PageNavigationProps {
 const sections = [
   { id: "overview", label: "Overview", icon: <Building2 className="w-4 h-4" /> },
   { id: "location", label: "General Information", icon: <MapPin className="w-4 h-4" /> },
-  { id: "claimed-data", label: "Additional Information", icon: <Building2 className="w-4 h-4" /> },
+  { id: "claimed-data", label: "Operational Details", icon: <Building2 className="w-4 h-4" /> },
    
    { id: "assessments", label: "Assessments & Audits", icon: <ClipboardCheck className="w-4 h-4" /> },
    { id: "certifications", label: "Certifications", icon: <Award className="w-4 h-4" /> },
