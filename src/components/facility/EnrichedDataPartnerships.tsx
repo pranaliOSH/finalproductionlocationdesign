@@ -79,7 +79,7 @@ export function EnrichedDataPartnerships({
           <h2 className="text-2xl font-semibold text-foreground">Partner Data
 
           <InfoTooltip
-              description="Are you a data provider and want your data listed here? Want to access this data for compliance reporting, risk analysis, or supplier monitoring?"
+              description="Are you a data provider and want your data listed here? Looking to access this data for compliance reporting, risk analysis, or supplier monitoring?"
               learnMoreHref="https://info.opensupplyhub.org/data-integrations"
               learnMoreLabel="Learn more"
               className="ml-2" />
