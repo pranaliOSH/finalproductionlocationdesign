@@ -5,7 +5,7 @@ import { AssessmentsData } from "./AssessmentsData";
 import { EnvironmentalData } from "./EnvironmentalData";
 import { LivingWageData } from "./LivingWageData";
 import { GrievanceMechanismData } from "./GrievanceMechanismData";
-import { Award, ClipboardCheck, Leaf, Wallet, ShieldAlert, Handshake } from "lucide-react";
+import { ClipboardCheck, Leaf, Wallet, ShieldAlert, Handshake } from "lucide-react";
 import { InfoTooltip } from "@/components/ui/info-tooltip";
 import { Switch } from "@/components/ui/switch";
 
@@ -134,49 +134,6 @@ export function EnrichedDataPartnerships({
           <AccordionPrimitive.Content className="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
             <div className="px-5 pb-5 pt-4">
               <AssessmentsData assessments={assessments} embedded />
-            </div>
-          </AccordionPrimitive.Content>
-        </AccordionPrimitive.Item>
-
-        <AccordionPrimitive.Item
-          value="certifications"
-          className="border-2 border-border rounded-lg bg-card overflow-hidden"
-          id="section-certifications">
-
-          <div
-            className="px-5 py-4 bg-muted cursor-pointer hover:bg-muted/80 transition-colors"
-            onClick={() => toggleItem("certifications")}>
-
-            <div className="flex items-center justify-between w-full">
-              <div className="flex items-center gap-3">
-                <Award className="w-5 h-5 text-yellow-600" />
-                <span className="font-bold text-lg">
-                  Certifications
-                  <InfoTooltip
-                    description="Learn more about this data, how it is sourced, and how to use it."
-                    learnMoreHref="https://info.opensupplyhub.org/certifications" />
-
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                 <button
-                  type="button"
-                  onClick={(e) => {e.stopPropagation();toggleItem("certifications");}}
-                  className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-
-                  {isOpen("certifications") ? "Close" : "Open"}
-                 </button>
-                <Switch
-                  checked={isOpen("certifications")}
-                  onCheckedChange={() => toggleItem("certifications")}
-                  onClick={(e) => e.stopPropagation()} />
-
-              </div>
-            </div>
-          </div>
-          <AccordionPrimitive.Content className="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
-            <div className="px-5 pb-5 pt-4">
-              <CertificationCard certifications={certifications} embedded />
             </div>
           </AccordionPrimitive.Content>
         </AccordionPrimitive.Item>
