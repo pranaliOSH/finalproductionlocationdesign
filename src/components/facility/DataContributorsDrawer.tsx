@@ -74,8 +74,8 @@ export function DataContributorsDrawer({
           <h4 className="text-xs font-medium text-primary mb-1.5">
             Why is this data source displayed first?
           </h4>
-          <p className="text-xs text-muted-foreground leading-relaxed">
-            OS Hub prioritizes data in this order: (1) claimed locations where owners/managers submitted data, (2) most frequently submitted values, (3) oldest submissions. The OS Hub team actively moderates to promote quality data. To request reordering, email <a href="mailto:support@opensupplyhub.org" className="text-primary hover:underline">Support</a> with the OS ID, preferred data entry, and justification.
+          <p className="text-xs text-muted-foreground leading-relaxed">OS Hub automatically prioritizes data in this order: (1) claimed locations where owners/managers submitted data, (2) most frequently submitted values. The OS Hub team also actively moderates to promote quality data. To request reordering, email Support with the OS ID, preferred data entry, and justification.
+            <a href="mailto:support@opensupplyhub.org" className="text-primary hover:underline">Support</a> with the OS ID, preferred data entry, and justification.
           
 
           </p>
