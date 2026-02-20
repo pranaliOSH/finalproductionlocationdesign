@@ -86,7 +86,7 @@ export function EnrichedDataPartnerships({
 
           </h2>
         </div>
-        <p className="text-base text-muted-foreground">The following information is provided by third-party partners who host additional social or environmental data related to this production location, its context, and/or its operations.</p>
+        <p className="text-base text-muted-foreground">The following information is provided by third-party partners who host additional social or environmental data related to this production location, its context, and/or its operations. </p>
       </div>
 
       {/* Accordion Sections */}
