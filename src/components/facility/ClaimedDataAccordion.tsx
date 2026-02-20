@@ -24,63 +24,63 @@ export function ClaimedDataAccordion({
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <AccordionPrimitive.Root 
-      type="single" 
-      collapsible 
+    <AccordionPrimitive.Root
+      type="single"
+      collapsible
       value={isOpen ? "claimed" : ""}
-      onValueChange={(value) => setIsOpen(value === "claimed")}
-    >
-      <AccordionPrimitive.Item 
-        value="claimed" 
-        className="border-2 border-border rounded-lg bg-card overflow-hidden"
-      >
-        <div 
+      onValueChange={(value) => setIsOpen(value === "claimed")}>
+
+      <AccordionPrimitive.Item
+        value="claimed"
+        className="border-2 border-border rounded-lg bg-card overflow-hidden">
+
+        <div
           className="px-5 py-4 bg-muted cursor-pointer hover:bg-muted/80 transition-colors"
-          onClick={toggleOpen}
-        >
+          onClick={toggleOpen}>
+
           <div className="flex items-start justify-between w-full gap-4">
             <div className="flex-1">
               <div className="flex items-center gap-3">
                 <ShieldCheck className="w-5 h-5 text-verified" />
-                <span className="font-medium text-lg">
-                  Additional Information Provided by Production Location
+                <span className="font-medium text-lg">Operational Details Submitted by Management
+
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <button className="inline-flex items-center justify-center rounded-full p-0.5 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors ml-2"><Info className="w-4 h-4" /></button>
                     </TooltipTrigger>
                     <TooltipContent side="top" className="max-w-xs p-3 space-y-2 font-normal">
                       <p className="text-sm text-popover-foreground">{explanation}</p>
-                      {learnMoreHref && (
-                        <a
-                          href={learnMoreHref}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
-                          onClick={(e) => e.stopPropagation()}
-                        >
+                      {learnMoreHref &&
+                      <a
+                        href={learnMoreHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                        onClick={(e) => e.stopPropagation()}>
+
                           {learnMoreLabel} →
                         </a>
-                      )}
+                      }
                     </TooltipContent>
                   </Tooltip>
                 </span>
               </div>
              </div>
             <div className="flex items-center gap-3">
-              <button 
+              <button
                 onClick={(e) => {
                   e.stopPropagation();
                   toggleOpen();
                 }}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-              >
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+
                 {isOpen ? "Close" : "Open"}
               </button>
-              <Switch 
-                checked={isOpen} 
+              <Switch
+                checked={isOpen}
                 onCheckedChange={toggleOpen}
-                onClick={(e) => e.stopPropagation()}
-              />
+                onClick={(e) => e.stopPropagation()} />
+
             </div>
           </div>
         </div>
@@ -92,6 +92,6 @@ export function ClaimedDataAccordion({
           </div>
         </AccordionPrimitive.Content>
       </AccordionPrimitive.Item>
-    </AccordionPrimitive.Root>
-  );
+    </AccordionPrimitive.Root>);
+
 }
