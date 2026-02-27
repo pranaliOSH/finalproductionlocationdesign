@@ -158,7 +158,7 @@ const assessments = [
 },
 // Left column - SLCP
 {
-  name: "CAF Assessment",
+  name: "",
   provider: "SLCP",
   providerUrl: "https://slconvergence.org/",
   scope: "Social & Labor",
